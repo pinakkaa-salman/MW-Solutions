@@ -1,0 +1,2057 @@
+.inter-extralight {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.inter-semibold {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.inter-bold {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.encode-sans-condensed-thin {
+  font-family: "Encode Sans Condensed", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.encode-sans-condensed-extralight {
+  font-family: "Encode Sans Condensed", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.encode-sans-condensed-light {
+  font-family: "Encode Sans Condensed", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.encode-sans-condensed-regular {
+  font-family: "Encode Sans Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.encode-sans-condensed-medium {
+  font-family: "Encode Sans Condensed", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.encode-sans-condensed-semibold {
+  font-family: "Encode Sans Condensed", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.encode-sans-condensed-bold {
+  font-family: "Encode Sans Condensed", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.encode-sans-condensed-extrabold {
+  font-family: "Encode Sans Condensed", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.encode-sans-condensed-black {
+  font-family: "Encode Sans Condensed", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Euphemia UCAS";
+  src: url("fonts/Euphemia UCAS Regular 2.6.6.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Euphemia UCAS";
+  src: url("fonts/Euphemia UCAS Bold 2.6.6.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Euphemia UCAS";
+  src: url("fonts/Euphemia UCAS Italic 2.6.6.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy";
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #171717;
+  overflow-x: hidden;
+}
+.main-container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.main-container-big {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Hero Section */
+
+.hero-section {
+  width: 100%;
+  height: calc(100vh - 100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.hero-ellipse {
+  width: 55.8125rem;
+  height: 55.8125rem;
+  flex-shrink: 0;
+  border-radius: 55.8125rem;
+  opacity: 0.2;
+  background: rgba(47, 202, 219, 0.6);
+  filter: blur(74px);
+  position: absolute;
+  right: -10%;
+  top: -20%;
+}
+.hero-section-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 9rem;
+}
+.hero-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+}
+.hero-title {
+  color: #fff;
+  font-family: "Euphemia UCAS";
+  font-size: 4.0625rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 0.0325rem;
+  width: 35.25rem;
+}
+.hero-subtitle {
+  color: var(--White, #fff);
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: "Euphemia UCAS";
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4375rem; /* 115% */
+}
+.hero-btn {
+  display: inline-flex;
+  padding: 0.9375rem 2.0625rem;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 0.1875rem;
+  background: #037d7f;
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 0.875rem;
+  letter-spacing: 0.10625rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  width: 16.225rem;
+}
+.hero-image-wrapper {
+  width: 33.125rem;
+  height: 33.125rem;
+  flex-shrink: 0;
+}
+.hero-image {
+  height: 100%;
+  width: 100%;
+}
+.security-section {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%),
+    linear-gradient(180deg, #171717 0%, rgba(23, 23, 23, 0) 100%),
+    url(./images/security-section-image.png) lightgray 50% / cover no-repeat;
+  width: 100%;
+  height: 47rem;
+}
+.security-section-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  height: 100%;
+  width: 100%;
+  padding: 10rem;
+}
+.security-section-title {
+  color: var(--White, #fff);
+  font-family: "Euphemia UCAS";
+  font-size: 2.8125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 4.875rem;
+  text-transform: capitalize;
+  width: 50rem;
+  text-align: center;
+}
+.security-section-title span {
+  background: linear-gradient(180deg, #9ee44d 0%, #049a99 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Euphemia UCAS";
+  font-size: 2.8125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 4.875rem;
+  text-transform: capitalize;
+}
+.security-section-subtitle {
+  color: #fff;
+  font-family: "Euphemia UCAS";
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: var(--font-weight-250, 400);
+  line-height: var(--line-height-34, 2.125rem); /* 188.889% */
+  width: 37rem;
+}
+.security-section-btn {
+  display: flex;
+  width: 19.22375rem;
+  height: 2.75rem;
+  padding: 0.6875rem 1.4375rem 0.8125rem 1.43875rem;
+  justify-content: center;
+  align-items: center;
+  gap: -0.02431rem;
+  flex-shrink: 0;
+  border-radius: 0.1875rem;
+  border: var(--stroke-weight-1, 1px) solid #049995;
+  background: #037d7f;
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: var(--font-size-14, 0.875rem);
+  letter-spacing: var(--letter-spacing-1_7, 0.10625rem);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* services-section */
+
+.services-section {
+  height: auto;
+  flex-shrink: 0;
+  background: var(--BG-Dark, #171717);
+  padding: 7.44rem 0 1.44rem 0;
+  position: relative;
+}
+.services-section-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6.44rem;
+  /* margin-top: 7.44rem; */
+}
+.section-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.section-subtitle {
+  color: var(--Accent-1, #3ed5dd);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 1.3125rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.5rem; /* 114.286% */
+  letter-spacing: 0.105rem;
+  text-align: center;
+}
+.section-title {
+  color: var(--White, #fff);
+  text-align: center;
+  font-family: "Euphemia UCAS";
+  font-size: 3.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 4.875rem; /* 156% */
+  text-transform: capitalize;
+  width: 47.5625rem;
+  margin-bottom: 1rem;
+}
+.section-description {
+  color: var(--White, #fff);
+  text-align: center;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Roboto;
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 1.4375rem; /* 176.923% */
+  width: 38.0625rem;
+  text-align: center;
+}
+.service-card-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 47rem;
+  z-index: 100;
+}
+.service-card {
+  width: 21.25rem;
+  height: 19.75rem;
+  border-radius: 1rem;
+  background: #1a1a1c;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  /* padding: 4rem 3rem; */
+}
+.service-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  z-index: 99;
+}
+.card-title {
+  color: var(
+    --royaltemplate-framer-website-white,
+    var(--color-white-solid, #fff)
+  );
+  font-family: var(--font-family-Font-1, Roboto);
+  font-size: var(--width-24, 1.5rem);
+  font-style: normal;
+  font-weight: var(--font-weight-700, 700);
+  line-height: var(--line-height-34, 2.125rem); /* 141.667% */
+  width: 15rem;
+  flex-shrink: 0;
+  margin-top: 3.75rem;
+}
+.card-description {
+  color: var(--White, #fff);
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: "Encode Sans Condensed";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 250;
+  line-height: 1.4375rem; /* 143.75% */
+  letter-spacing: 0.01rem;
+  width: 12.9375rem;
+}
+.service-card-image-wrapper {
+  width: 21.25rem;
+  height: 12.3125rem;
+  flex-shrink: 0;
+  border-radius: 1rem;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.upper-gradent {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(180deg, #171717 0%, rgba(23, 23, 23, 0) 100%);
+}
+.service-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.service-card-image-wrapper::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #1a1a1c69;
+  /* backdrop-filter: blur(4px); */
+  /* -webkit-backdrop-filter: blur(4px); */
+  z-index: 2;
+}
+
+/* solutions-section */
+
+.solutions-section {
+  height: auto;
+  background: #171717;
+  padding: 7.75rem 0 0 0;
+  position: relative;
+}
+.solution-section-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+.solutions-cards-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  z-index: 100;
+}
+.solution-cards-row1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding-left: 28rem;
+}
+.solution-cards-row2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-right: 28rem;
+}
+.solution-card {
+  display: flex;
+  width: 21.25rem;
+  height: 19.75rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  position: relative;
+}
+.solution-card-image {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: 1;
+}
+.solution-card-title {
+  color: var(
+    --royaltemplate-framer-website-white,
+    var(--color-white-solid, #fff)
+  );
+  font-family: var(--font-family-Font-1, Roboto);
+  font-size: var(--width-24, 1.5rem);
+  font-style: normal;
+  font-weight: var(--font-weight-700, 700);
+  line-height: var(--line-height-34, 2.125rem); /* 141.667% */
+  z-index: 99;
+  max-width: 12rem;
+  text-align: center;
+}
+
+/* benefits-section */
+
+.benefits-section {
+  height: auto;
+  flex-shrink: 0;
+  background: var(--BG-Dark, #171717);
+  padding: 7.44rem 0 1.44rem 0;
+  position: relative;
+}
+.benefits-section-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6.44rem;
+  /* margin-top: 7.44rem; */
+}
+.benefits-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.benefits-card-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 47rem;
+  z-index: 100;
+}
+.benefits-card {
+  width: 21.25rem;
+  height: 19.75rem;
+  border-radius: 1rem;
+  background: #1a1a1c;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  /* padding: 4rem 3rem; */
+}
+.benefits-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  z-index: 99;
+}
+.benefits-card-image-wrapper {
+  width: 21.25rem;
+  height: 12.3125rem;
+  flex-shrink: 0;
+  border-radius: 1rem;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* clients-section */
+
+.clients-section {
+  height: auto;
+  padding: 8.5rem 0 11rem 0;
+  background: var(--BG-Dark, #171717);
+}
+.clients-section-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5.62rem;
+}
+.clients-logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4.12rem;
+}
+
+/* about-section */
+
+.about-section {
+  height: auto;
+  padding: 0 0 3.81rem 0;
+  background: var(--BG-Dark, #171717);
+  position: relative;
+}
+.about-secton-wraper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: auto;
+}
+.about-content-wraper {
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
+  padding: 5rem 5rem 5rem 5rem;
+}
+.about-title {
+  color: #fff;
+  font-family: "Euphemia UCAS";
+  font-size: 2.8125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.625rem; /* 128.889% */
+  width: 34.0625rem;
+}
+.about-description {
+  color: #dfdfdf;
+  font-family: "Euphemia UCAS";
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-weight: var(--font-weight-250, 400);
+  line-height: 1.4375rem; /* 176.923% */
+  width: 29.0625rem;
+}
+.about-image-wrapper {
+  width: 30rem;
+  height: 29.44938rem;
+  display: flex;
+  gap: 1.8rem;
+  justify-content: center;
+  align-items: center;
+}
+.about-image-card {
+  display: flex;
+  width: 21.75rem;
+  height: 29.44938rem;
+  /* padding: 0 0.9375rem 0.01188rem 0.9375rem; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 1rem;
+  background: #037d7f;
+  /* margin-right: 4.18rem; */
+}
+.about-image {
+  width: 21.875rem;
+  height: 21.875rem;
+  border-radius: 1rem;
+}
+.about-image-content-wrapper {
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  padding: 1.88rem;
+}
+.about-image-title {
+  color: var(
+    --royaltemplate-framer-website-white,
+    var(--color-white-solid, #fff)
+  );
+  font-family: Roboto;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.125rem; /* 170% */
+}
+.about-image-description {
+  color: var(
+    --royaltemplate-framer-website-white,
+    var(--color-white-solid, #fff)
+  );
+  font-family: var(--font-family-Font-2, "Encode Sans Condensed");
+  font-size: var(--font-size-16, 1rem);
+  font-style: normal;
+  font-weight: var(--font-weight-250, 250);
+  line-height: var(--line-height-27_2, 1.7rem); /* 170% */
+}
+.right-arrow {
+  display: flex;
+  height: 1.9375rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+.left-arrow {
+  display: flex;
+  height: 1.9375rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+/* testimonial-section */
+
+.testimonial-section {
+  height: auto;
+  padding: 6.63rem 0 4.6rem 0;
+  background: var(--BG-Dark, #171717);
+}
+.testimonial-section-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3.7rem;
+}
+.testimonial-title-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.testimonial-cards-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.testimonial-card {
+  display: flex;
+  width: 37.625rem;
+  padding: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+  border-radius: 1rem;
+  background: var(--Style, rgba(170, 170, 170, 0.06));
+  backdrop-filter: blur(25px);
+}
+.testimonial-description {
+  color: var(--White, #fff);
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4375rem; /* 143.75% */
+  width: 33.625rem;
+}
+.testimonial-user-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.testimonial-user-image {
+  height: 3.75rem;
+  width: 3.75rem;
+  border-radius: 50%;
+}
+.testimonial-user-name-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.testimonial-user-name {
+  color: var(--White, #fff);
+  font-family: Poppins;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2rem; /* 114.286% */
+}
+.testimonial-user-role {
+  color: var(--White, #fff);
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Poppins;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1rem; /* 133.333% */
+}
+.five-stars {
+  width: 7rem;
+}
+
+/* blog-section */
+
+.blog-section {
+  height: auto;
+  padding: 4.6rem 0 5rem 0;
+  background: var(--BG-Dark, #171717);
+  position: relative;
+}
+.blog-section-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+.blog-section-title-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.blog-cards-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  z-index: 100;
+}
+.blog-cards {
+  width: 23.0625rem;
+  height: 32.375rem;
+  flex-shrink: 0;
+  border-radius: 1rem;
+  background: #171717;
+  box-shadow: 0 4px 10px 0 #1a2d2f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.blog-image {
+  width: 23.0625rem;
+  height: 18.30063rem;
+  flex-shrink: 0;
+  border-radius: 1.25rem 1.25rem 0 0;
+}
+.blog-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  height: 100%;
+  width: 100%;
+}
+.blog-card-title {
+  color: var(--Slate-50, #f8fafc);
+  text-align: center;
+  font-family: "Euphemia UCAS";
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.blog-card-description {
+  color: var(--Gray-400, #9ca3af);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 16rem;
+}
+.blog-card-description span {
+  color: #8b929c;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+/* contact-section */
+
+.contact-section {
+  height: auto;
+  padding: 5rem 0 7.44rem 0;
+  background: var(--BG-Dark, #171717);
+}
+.contact-section-wrapper {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+.contact-section-content-wrapper {
+  padding-top: 3rem;
+}
+.contact-section-title {
+  color: #fff;
+  font-family: "Euphemia UCAS";
+  font-size: 2.8125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.625rem; /* 128.889% */
+  width: 34.0625rem;
+}
+.contact-section-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.form-input {
+  display: flex;
+  width: 38.125rem;
+  height: 4rem;
+  padding: 1.25rem 32.875rem 1.3125rem 0.5625rem;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 1rem;
+  background: rgba(170, 170, 170, 0.06);
+  backdrop-filter: blur(25px);
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-feature-settings: "liga" off, "clig" off;
+
+  /* Main Text/P1 400 */
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4375rem; /* 143.75% */
+}
+.form-input-big {
+  display: flex;
+  width: 38.125rem;
+  height: 10rem;
+  padding: 1rem 29.8125rem 7.5625rem 1.3125rem;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 1rem;
+  background: rgba(170, 170, 170, 0.06);
+  backdrop-filter: blur(25px);
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-feature-settings: "liga" off, "clig" off;
+
+  /* Main Text/P1 400 */
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4375rem; /* 143.75% */
+}
+.form-button-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+.form-button {
+  display: flex;
+  width: 20.3675rem;
+  height: 2.875rem;
+  padding: 0.0625rem;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 0.125rem;
+  border: var(--stroke-weight-1, 1px) solid #049995;
+  background: #01605e;
+  display: flex;
+  padding: 0.9375rem 2.3rem 0.9375rem 2.0625rem;
+  align-items: center;
+  color: var(
+    --royaltemplate-framer-website-white,
+    var(--color-white-solid, #fff)
+  );
+  text-align: center;
+  font-family: Roboto;
+  font-size: var(--font-size-14, 0.875rem);
+  font-style: normal;
+  font-weight: var(--font-weight-500, 500);
+  line-height: var(--font-size-14, 0.875rem); /* 100% */
+  letter-spacing: var(--letter-spacing-1_7, 0.10625rem);
+  text-transform: uppercase;
+}
+.right-arrow {
+  width: 1.48125rem;
+  height: 1.375rem;
+  flex-shrink: 0;
+}
+
+
+.ellipse {
+  width: 33.3125rem;
+  height: 33.3125rem;
+  flex-shrink: 0;
+  border-radius: 33.3125rem;
+  opacity: 0.2;
+  background: rgba(47, 202, 219, 0.6);
+  filter: blur(74px);
+  z-index: 99;
+}
+.ellipse2{
+  position: absolute;
+  top: 36.19rem;
+  left: -12rem;
+}
+.ellipse3{
+  position: absolute;
+  top: 42rem;
+  right: -12rem;
+}
+.ellipse4{
+  position: absolute;
+  top: 15rem;
+  right: -15rem;
+}
+.ellipse5{
+  position: absolute;
+  top: 3.31rem;
+  left: -15rem;
+}
+.service-card-wrapper,
+.benefits-card-wrapper {
+  display: flex;
+  justify-content: flex-start; /* Changed from center */
+  align-items: center;
+  gap: 1rem;
+  /* margin-left: 47rem; - REMOVE THIS */
+  z-index: 100;
+  overflow: hidden; 
+}
+
+
+
+
+
+/* ===================================
+   TABLET RESPONSIVE (768px - 1024px)
+   =================================== */
+
+@media (max-width: 1024px) {
+  .main-container {
+    padding: 0 2rem;
+  }
+
+  /* Clients Section */
+  .clients-section {
+    padding: 6rem 0 8rem 0;
+  }
+
+  .clients-section-wrapper {
+    gap: 4rem;
+  }
+
+  .clients-logo-wrapper {
+    gap: 2.5rem;
+    flex-wrap: wrap;
+  }
+
+  .clients-logo {
+    max-width: 8rem;
+    height: auto;
+  }
+
+  /* About Section */
+  .about-section {
+    padding: 4rem 0 3rem 0;
+  }
+
+  .about-secton-wraper {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .about-content-wraper {
+    padding: 2rem;
+    align-items: center;
+  }
+
+  .about-title {
+    font-size: 2.25rem;
+    line-height: 3rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-description {
+    font-size: 0.875rem;
+    line-height: 1.35rem;
+    width: 100%;
+    max-width: 30rem;
+    text-align: center;
+  }
+
+  .about-image-wrapper {
+    width: 100%;
+    max-width: 30rem;
+  }
+
+  .about-image-card {
+    width: 20rem;
+    height: auto;
+  }
+
+  .about-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .left-arrow,
+  .right-arrow {
+    height: 1.5rem;
+  }
+
+  /* Testimonial Section */
+  .testimonial-section {
+    padding: 5rem 0 4rem 0;
+  }
+
+  .testimonial-section-wrapper {
+    gap: 3rem;
+  }
+
+  .testimonial-cards-wrapper {
+    flex-direction: column;
+  }
+
+  .testimonial-card {
+    width: 100%;
+    max-width: 35rem;
+  }
+
+  .testimonial-description {
+    width: 100%;
+  }
+
+  .testimonial-user-name {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+
+  /* Blog Section */
+  .blog-section {
+    padding: 4rem 0;
+  }
+
+  .blog-section-wrapper {
+    gap: 4rem;
+  }
+
+  .blog-cards-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .blog-cards {
+    width: 100%;
+    max-width: 22rem;
+  }
+
+  .blog-image {
+    width: 100%;
+  }
+
+  /* Contact Section */
+  .contact-section {
+    padding: 4rem 0 6rem 0;
+  }
+
+  .contact-section-wrapper {
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .contact-section-content-wrapper {
+    padding-top: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-section-title {
+    font-size: 2.25rem;
+    line-height: 3rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact-section-form {
+    width: 100%;
+    align-items: center;
+  }
+
+  .form-input,
+  .form-input-big {
+    width: 100%;
+    max-width: 35rem;
+  }
+}
+
+/* ===================================
+   MOBILE RESPONSIVE (320px - 767px)
+   =================================== */
+
+@media (max-width: 767px) {
+  .main-container {
+    padding: 0 1rem;
+  }
+
+  /* Clients Section */
+  .clients-section {
+    padding: 4rem 0 6rem 0;
+  }
+
+  .clients-section-wrapper {
+    gap: 3rem;
+  }
+
+  .clients-logo-wrapper {
+    /* gap: 1.5rem; */
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .clients-logo {
+    max-width: 6rem;
+    height: auto;
+  }
+
+  /* About Section */
+  .about-section {
+    padding: 3rem 0 3rem 0;
+  }
+
+  .about-secton-wraper {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .about-content-wraper {
+    padding: 1.5rem 1rem;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  .about-title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-description {
+    font-size: 0.8125rem;
+    line-height: 1.25rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-image-wrapper {
+    width: 100%;
+    gap: 1rem;
+    height: auto;
+  }
+
+  .about-image-card {
+    width: 100%;
+    max-width: 18rem;
+    height: auto;
+  }
+
+  .about-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .about-image-content-wrapper {
+    padding: 1.5rem;
+  }
+
+  .about-image-title {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .about-image-description {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+  }
+
+  .left-arrow,
+  .right-arrow {
+    height: 1.25rem;
+    width: auto;
+  }
+
+  /* Testimonial Section */
+  .testimonial-section {
+    padding: 4rem 0 3rem 0;
+  }
+
+  .testimonial-section-wrapper {
+    gap: 2.5rem;
+  }
+
+  .testimonial-title-wrapper {
+    gap: 0.75rem;
+  }
+
+  .testimonial-cards-wrapper {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .testimonial-card {
+    width: 100%;
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+
+  .testimonial-description {
+    width: 100%;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .testimonial-user-wrapper {
+    gap: 0.75rem;
+  }
+
+  .testimonial-user-image {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .testimonial-user-name {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+
+  .testimonial-user-role {
+    font-size: 0.625rem;
+    line-height: 0.875rem;
+  }
+
+  .five-stars {
+    width: 5rem;
+  }
+
+  /* Blog Section */
+  .blog-section {
+    padding: 3rem 0 4rem 0;
+  }
+
+  .blog-section-wrapper {
+    gap: 3rem;
+  }
+
+  .blog-section-title-wrapper {
+    gap: 0.75rem;
+  }
+
+  .blog-cards-wrapper {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .blog-cards {
+    width: 100%;
+    max-width: 20rem;
+    height: auto;
+  }
+
+  .blog-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .blog-card-content {
+    padding: 1.5rem 1rem;
+    gap: 0.75rem;
+  }
+
+  .blog-card-title {
+    font-size: 1.25rem;
+  }
+
+  .blog-card-description {
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .blog-card-description span {
+    font-size: 0.875rem;
+  }
+
+  /* Contact Section */
+  .contact-section {
+    padding: 3rem 0 5rem 0;
+  }
+
+  .contact-section-wrapper {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .contact-section-content-wrapper {
+    padding-top: 0;
+  }
+
+  .contact-section-title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact-section-form {
+    width: 100%;
+    gap: 0.75rem;
+  }
+
+  .form-input {
+    width: 100%;
+    height: 3.5rem;
+    padding: 1rem;
+    text-align: left;
+    font-size: 0.875rem;
+  }
+
+  .form-input-big {
+    width: 100%;
+    height: 8rem;
+    padding: 1rem;
+    text-align: left;
+    font-size: 0.875rem;
+  }
+
+  .form-button-wrapper {
+    margin-top: 0.5rem;
+  }
+
+  .form-button {
+    width: 100%;
+    max-width: 18rem;
+    height: auto;
+    padding: 0.875rem 1.5rem;
+    font-size: 0.75rem;
+    gap: 0.5rem;
+  }
+
+  .right-arrow {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
+/* ===================================
+   EXTRA SMALL MOBILE (320px - 480px)
+   =================================== */
+
+@media (max-width: 480px) {
+  .main-container {
+    padding: 0 0.875rem;
+  }
+
+  /* Clients Section */
+  .clients-logo {
+    max-width: 5rem;
+  }
+
+  /* About Section */
+  .about-title {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .about-description {
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+  }
+
+  .about-image-card {
+    max-width: 16rem;
+  }
+
+  .about-image-title {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .about-image-description {
+    font-size: 0.8125rem;
+    line-height: 1.35rem;
+  }
+
+  /* Testimonial Section */
+  .testimonial-user-name {
+    font-size: 1.125rem;
+    line-height: 1.35rem;
+  }
+
+  .testimonial-user-role {
+    font-size: 0.5625rem;
+  }
+
+  .five-stars {
+    width: 4.5rem;
+  }
+
+  /* Blog Section */
+  .blog-cards {
+    max-width: 18rem;
+  }
+
+  .blog-card-title {
+    font-size: 1.125rem;
+  }
+
+  .blog-card-description {
+    font-size: 0.9375rem;
+  }
+
+  .blog-card-description span {
+    font-size: 0.8125rem;
+  }
+
+  /* Contact Section */
+  .contact-section-title {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .form-button {
+    max-width: 16rem;
+    padding: 0.75rem 1.25rem;
+    font-size: 0.6875rem;
+  }
+}
+
+/* ===================================
+   LANDSCAPE MOBILE OPTIMIZATION
+   =================================== */
+
+@media (max-width: 767px) and (orientation: landscape) {
+  .clients-section {
+    padding: 3rem 0 4rem 0;
+  }
+
+  .about-section {
+    padding: 2.5rem 0;
+  }
+
+  .about-secton-wraper {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .about-content-wraper {
+    padding: 1rem;
+  }
+
+  .about-image-wrapper {
+    max-width: 20rem;
+  }
+
+  .testimonial-section {
+    padding: 3rem 0 2.5rem 0;
+  }
+
+  .blog-section {
+    padding: 2.5rem 0 3rem 0;
+  }
+
+  .blog-cards-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .contact-section {
+    padding: 2.5rem 0 4rem 0;
+  }
+  .section-title{
+    max-width: 90%;
+  }
+}
+
+
+/* ===================================
+   TABLET RESPONSIVE (768px - 1024px)
+   =================================== */
+
+@media (max-width: 1024px) {
+  /* Hero Section */
+  .hero-section {
+    height: auto;
+    padding: 4rem 0;
+  }
+
+  .hero-ellipse {
+    width: 35rem;
+    height: 35rem;
+    right: -20%;
+    top: -10%;
+  }
+
+  .hero-section-wrapper {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  .hero-content-wrapper {
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+    line-height: 110%;
+    width: 100%;
+    max-width: 35rem;
+    text-align: center;
+  }
+
+  .hero-subtitle {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    text-align: center;
+  }
+
+  .hero-btn {
+    width: auto;
+    max-width: 18rem;
+  }
+
+  .hero-image-wrapper {
+    width: 100%;
+    max-width: 28rem;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Security Section */
+  .security-section {
+    height: auto;
+    padding: 4rem 0;
+  }
+
+  .security-section-wrapper {
+    padding: 4rem 2rem;
+    gap: 2rem;
+  }
+
+  .security-section-title {
+    font-size: 2.25rem;
+    line-height: 3.5rem;
+    width: 100%;
+    max-width: 40rem;
+  }
+
+  .security-section-title span {
+    font-size: 2.25rem;
+    line-height: 3.5rem;
+  }
+
+  .security-section-subtitle {
+    font-size: 1rem;
+    line-height: 1.75rem;
+    width: 100%;
+    max-width: 35rem;
+    text-align: center;
+  }
+
+  .security-section-btn {
+    width: auto;
+    max-width: 18rem;
+  }
+}
+
+/* ===================================
+   MOBILE RESPONSIVE (320px - 767px)
+   =================================== */
+
+@media (max-width: 767px) {
+  /* Hero Section */
+  .hero-section {
+    height: auto;
+    padding: 3rem 0;
+  }
+
+  .hero-ellipse {
+    width: 20rem;
+    height: 20rem;
+    right: -30%;
+    top: -5%;
+    filter: blur(50px);
+  }
+
+  .hero-section-wrapper {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .hero-content-wrapper {
+    gap: 2rem;
+    align-items: center;
+    padding: 0 1rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+    line-height: 110%;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 0.02rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    line-height: 1.35rem;
+    text-align: center;
+  }
+
+  .hero-btn {
+    width: 100%;
+    max-width: 18rem;
+    font-size: 0.75rem;
+    padding: 0.875rem 1.5rem;
+    line-height: 1rem;
+  }
+
+  .hero-image-wrapper {
+    width: 100%;
+    max-width: 20rem;
+    height: auto;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Security Section */
+  .security-section {
+    height: auto;
+    padding: 3rem 0;
+  }
+
+  .security-section-wrapper {
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+
+  .security-section-title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    width: 100%;
+    text-transform: none;
+  }
+
+  .security-section-title span {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-transform: none;
+  }
+
+  .security-section-subtitle {
+    font-size: 0.875rem;
+    line-height: 1.35rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .security-section-btn {
+    width: 100%;
+    max-width: 18rem;
+    height: auto;
+    font-size: 0.75rem;
+    padding: 0.75rem 1.25rem;
+    line-height: 1rem;
+  }
+}
+
+/* ===================================
+   EXTRA SMALL MOBILE (320px - 480px)
+   =================================== */
+
+@media (max-width: 480px) {
+  /* Hero Section */
+  .hero-section {
+    padding: 2.5rem 0;
+  }
+
+  .hero-ellipse {
+    width: 15rem;
+    height: 15rem;
+    right: -35%;
+    top: -3%;
+    filter: blur(40px);
+  }
+
+  .hero-title {
+    font-size: 1.75rem;
+    line-height: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.9375rem;
+    line-height: 1.25rem;
+  }
+
+  .hero-btn {
+    max-width: 16rem;
+    font-size: 0.6875rem;
+    padding: 0.8125rem 1.25rem;
+  }
+
+  .hero-image-wrapper {
+    max-width: 18rem;
+  }
+
+  /* Security Section */
+  .security-section {
+    padding: 2.5rem 0;
+  }
+
+  .security-section-wrapper {
+    padding: 2rem 0.875rem;
+    gap: 1.75rem;
+  }
+
+  .security-section-title {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .security-section-title span {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .security-section-subtitle {
+    font-size: 0.8125rem;
+    line-height: 1.25rem;
+  }
+
+  .security-section-btn {
+    max-width: 16rem;
+    font-size: 0.6875rem;
+    padding: 0.6875rem 1.125rem;
+  }
+  .section-title{
+    font-size: 1.5rem;
+    max-width: 90% !important;
+  }
+  .section-description{
+    max-width: 90%;
+  }
+}
+
+/* ===================================
+   LANDSCAPE MOBILE OPTIMIZATION
+   =================================== */
+
+@media (max-width: 767px) and (orientation: landscape) {
+  .hero-section {
+    padding: 2rem 0;
+  }
+
+  .hero-section-wrapper {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .hero-content-wrapper {
+    align-items: flex-start;
+  }
+
+  .hero-title {
+    text-align: left;
+    font-size: 1.75rem;
+  }
+
+  .hero-subtitle {
+    text-align: left;
+    font-size: 0.9375rem;
+  }
+
+  .hero-image-wrapper {
+    max-width: 18rem;
+  }
+
+  .security-section {
+    padding: 2rem 0;
+  }
+
+  .security-section-wrapper {
+    padding: 2rem 1rem;
+    gap: 1.5rem;
+  }
+}
+
+/* ===================================
+   HIGH RESOLUTION ADJUSTMENTS
+   =================================== */
+
+@media (min-width: 1440px) {
+  .hero-ellipse {
+    right: -5%;
+    top: -15%;
+  }
+}
+
+@media (min-width: 1920px) {
+  .hero-ellipse {
+    right: 0%;
+    top: -10%;
+  }
+}
+
+
+
+
+
+/* ========================= */
+/* TABLET (up to 1024px) */
+/* ========================= */
+@media screen and (max-width: 1024px) {
+  .section-title {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    width: 80%;
+  }
+
+  .section-description {
+    width: 70%;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+}
+
+/* ========================= */
+/* MOBILE (up to 600px) */
+/* ========================= */
+@media screen and (max-width: 600px) {
+  .section-subtitle {
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+    width: 100%;
+  }
+
+  .section-description {
+    width: 100%;
+    font-size: 0.85rem;
+    line-height: 1.4rem;
+  }
+
+  .section-content-wrapper {
+    padding: 1.5rem 1rem;
+    gap: 0.75rem;
+  }
+}
+
+
+
+

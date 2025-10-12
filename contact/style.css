@@ -1,0 +1,674 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy";
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.section-title {
+  color: var(--White, #fff);
+  text-align: center;
+  font-family: "Euphemia UCAS";
+  font-size: 3.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 3.75rem */
+  letter-spacing: 0.025rem;
+  width: 67.5rem;
+}
+.section-para {
+  color: var(--White, #fff);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 1.625rem;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 2.6875rem; /* 165.385% */
+  text-transform: capitalize;
+  width: 62.9375rem;
+}
+.section-subtitle {
+  color: var(--Accent-1, #3ed5dd);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 1.3125rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.5rem; /* 114.286% */
+  letter-spacing: 0.105rem;
+}
+
+/* contact-hero-setion */
+
+.contact-hero-setion {
+  height: auto;
+  padding: 11rem 0;
+  position: relative;
+  background: var(--BG-Dark, #171717);
+  background-image: url(./images/hero-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contact-hero-section-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+.contact-title {
+  color: #fff;
+  font-family: "Euphemia UCAS";
+  font-size: 3.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 0.025rem;
+}
+.contact-title span {
+  background: linear-gradient(90deg, #01a5ce 0%, #9ee44d 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-family: "Euphemia UCAS";
+  font-size: 3.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 3.75rem */
+  letter-spacing: 0.025rem;
+}
+
+/* contact-us-section */
+
+.contact-us-section {
+  height: auto;
+  padding: 7.8rem 0 10rem 0;
+  position: relative;
+  background: var(--BG-Dark, #171717);
+}
+.contact-us-section-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7.06rem;
+}
+.contact-us-title-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.12rem;
+}
+.contact-us-form-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3.06rem;
+}
+.contact-us-image {
+  width: 30.6875rem;
+  height: 33.9375rem;
+  flex-shrink: 0;
+  border-radius: 0.25rem;
+  opacity: 0.5;
+}
+.contact-us-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 2rem;
+}
+label {
+  color: #fff;
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.25rem; /* 125% */
+}
+input {
+  color: #fff;
+  font-family: Inter;
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.25rem; /* 153.846% */
+  width: 17.375rem;
+  height: auto;
+  border: none;
+  flex-shrink: 0;
+  border-bottom: 1px solid white;
+  background-color: transparent;
+}
+textarea {
+  color: #fff;
+  font-family: Inter;
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.25rem;
+  width: 30.1875rem;
+  height: auto;
+  flex-shrink: 0;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+}
+.submit-btn {
+  display: flex;
+  padding: 0.9375rem 3.8125rem 0.9375rem 2.0625rem;
+  align-items: center;
+  border-radius: 0.1875rem;
+  border: var(--stroke-weight-1, 1px) solid #037d7f;
+  background: #037d7f;
+  color: var(
+    --royaltemplate-framer-website-white,
+    var(--color-white-solid, #fff)
+  );
+  text-align: center;
+  font-family: var(--font-family-Font-1, Roboto);
+  font-size: var(--font-size-14, 0.875rem);
+  font-style: normal;
+  font-weight: var(--font-weight-500, 500);
+  line-height: var(--font-size-14, 0.875rem); /* 100% */
+  letter-spacing: var(--letter-spacing-1_7, 0.10625rem);
+  text-transform: uppercase;
+}
+.submit-right-arrow {
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+}
+
+/* catch-us-section */
+
+.catch-us-section {
+  height: auto;
+  padding: 3.75rem 0 10.75rem 0;
+  position: relative;
+  background: var(--BG-Dark, #171717);
+}
+.catch-us-section-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4.5rem;
+}
+.catch-us-title-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  width: 47.5625rem;
+}
+.catch-us-title {
+  width: 47.5625rem;
+}
+.catch-us-card-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.catch-us-card {
+  width: 18.75rem;
+  height: 22rem;
+  flex-shrink: 0;
+  border-radius: 1rem;
+  background: #171717;
+  box-shadow: 0 4px 10px 0 #1a2d2f;
+}
+.catch-us-card-image {
+  width: 18.75rem;
+  height: 11.125rem;
+  flex-shrink: 0;
+  border-radius: 1.25rem 1.25rem 0 0;
+}
+.catch-us-card-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.88rem;
+}
+.catch-us-card-title {
+  color: var(--Slate-50, #f8fafc);
+  text-align: center;
+  font-family: "Euphemia UCAS";
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 17rem;
+  height: 3.375rem;
+  flex-shrink: 0;
+}
+.catch-us-subtitle {
+  color: var(--www-mwsolutions-ics-com-boulder, var(--color-grey-47, #777));
+  text-align: center;
+  font-family: Roboto;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: var(--font-weight-400, 400);
+  line-height: 1.25rem; /* 166.667% */
+  width: 16.5rem;
+  height: 3.4375rem;
+  flex-shrink: 0;
+}
+
+
+
+
+
+/* ===================================
+   TABLET RESPONSIVE (768px - 1024px)
+   =================================== */
+
+@media (max-width: 1024px) {
+  .main-container {
+    padding: 0 2rem;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+    width: 100%;
+    max-width: 50rem;
+  }
+
+  .section-para {
+    font-size: 1.25rem;
+    line-height: 2rem;
+    width: 100%;
+    max-width: 45rem;
+  }
+
+  .section-subtitle {
+    font-size: 1.125rem;
+  }
+
+  /* Contact Hero Section */
+  .contact-hero-setion {
+    padding: 7rem 0;
+  }
+
+  .contact-hero-section-wrapper {
+    gap: 1rem;
+  }
+
+  .contact-title {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .contact-title span {
+    font-size: 2.5rem;
+  }
+
+  /* Contact Us Section */
+  .contact-us-section {
+    padding: 6rem 0 8rem 0;
+  }
+
+  .contact-us-section-wrapper {
+    gap: 5rem;
+  }
+
+  .contact-us-form-wrapper {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .contact-us-image {
+    width: 100%;
+    max-width: 28rem;
+    height: auto;
+  }
+
+  .contact-us-form {
+    width: 100%;
+    align-items: center;
+  }
+
+  input {
+    width: 100%;
+    max-width: 25rem;
+  }
+
+  textarea {
+    width: 100%;
+    max-width: 35rem;
+  }
+
+  /* Catch Us Section */
+  .catch-us-section {
+    padding: 3rem 0 8rem 0;
+  }
+
+  .catch-us-section-wrapper {
+    gap: 3.5rem;
+  }
+
+  .catch-us-title-wrapper {
+    width: 100%;
+    max-width: 40rem;
+  }
+
+  .catch-us-title {
+    width: 100%;
+  }
+
+  .catch-us-card-wrapper {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .catch-us-card {
+    width: 100%;
+    max-width: 22rem;
+    height: auto;
+  }
+
+  .catch-us-card-image {
+    width: 100%;
+  }
+
+  .catch-us-card-content-wrapper {
+    padding: 0 1rem 1.5rem 1rem;
+  }
+
+  .catch-us-card-title {
+    width: 100%;
+    height: auto;
+  }
+
+  .catch-us-subtitle {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* ===================================
+   MOBILE RESPONSIVE (320px - 767px)
+   =================================== */
+
+@media (max-width: 767px) {
+  .main-container {
+    padding: 0 1rem;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+    line-height: 110%;
+    width: 100%;
+  }
+
+  .section-para {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    width: 100%;
+    text-transform: none;
+  }
+
+  .section-subtitle {
+    font-size: 0.875rem;
+    letter-spacing: 0.07rem;
+  }
+
+  /* Contact Hero Section */
+  .contact-hero-setion {
+    padding: 4rem 0 5rem 0;
+  }
+
+  .contact-hero-section-wrapper {
+    gap: 1rem;
+    padding: 0 0.5rem;
+  }
+
+  .contact-title {
+    font-size: 1.75rem;
+    line-height: 110%;
+    text-align: center;
+  }
+
+  .contact-title span {
+    font-size: 1.75rem;
+    line-height: 110%;
+  }
+
+  /* Contact Us Section */
+  .contact-us-section {
+    padding: 4rem 0 6rem 0;
+  }
+
+  .contact-us-section-wrapper {
+    gap: 3rem;
+  }
+
+  .contact-us-title-wrapper {
+    gap: 1rem;
+  }
+
+  .contact-us-form-wrapper {
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .contact-us-image {
+    width: 100%;
+    max-width: 20rem;
+    height: auto;
+  }
+
+  .contact-us-form {
+    width: 100%;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 0 0.5rem;
+  }
+
+  label {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+  }
+
+  input {
+    width: 100%;
+    font-size: 0.75rem;
+    padding: 0.5rem 0;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 0.75rem;
+    padding: 0.5rem 0;
+    min-height: 4rem;
+  }
+
+  .submit-btn {
+    width: 100%;
+    max-width: 18rem;
+    padding: 0.875rem 1.5rem;
+    font-size: 0.75rem;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 0 auto;
+  }
+
+  .submit-right-arrow {
+    width: 0.875rem;
+    height: 0.875rem;
+  }
+
+  /* Catch Us Section */
+  .catch-us-section {
+    padding: 3rem 0 6rem 0;
+  }
+
+  .catch-us-section-wrapper {
+    gap: 3rem;
+  }
+
+  .catch-us-title-wrapper {
+    width: 100%;
+    gap: 0.75rem;
+  }
+
+  .catch-us-title {
+    width: 100%;
+  }
+
+  .catch-us-card-wrapper {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .catch-us-card {
+    width: 100%;
+    max-width: 20rem;
+    height: auto;
+  }
+
+  .catch-us-card-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .catch-us-card-content-wrapper {
+    margin-top: 1.5rem;
+    padding: 0 1rem 1.5rem 1rem;
+    gap: 0.75rem;
+  }
+
+  .catch-us-card-title {
+    font-size: 0.9375rem;
+    width: 100%;
+    height: auto;
+    line-height: 1.4rem;
+  }
+
+  .catch-us-subtitle {
+    font-size: 0.6875rem;
+    line-height: 1.125rem;
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* ===================================
+   EXTRA SMALL MOBILE (320px - 480px)
+   =================================== */
+
+@media (max-width: 480px) {
+  .main-container {
+    padding: 0 0.875rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .section-para {
+    font-size: 0.875rem;
+    line-height: 1.35rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.75rem;
+  }
+
+  /* Contact Hero Section */
+  .contact-hero-setion {
+    padding: 3rem 0 4rem 0;
+  }
+
+  .contact-title {
+    font-size: 1.5rem;
+  }
+
+  .contact-title span {
+    font-size: 1.5rem;
+  }
+
+  /* Contact Us Section */
+  .contact-us-section {
+    padding: 3rem 0 5rem 0;
+  }
+
+  .contact-us-section-wrapper {
+    gap: 2.5rem;
+  }
+
+  .contact-us-image {
+    max-width: 18rem;
+  }
+
+  label {
+    font-size: 0.8125rem;
+  }
+
+  input,
+  textarea {
+    font-size: 0.6875rem;
+  }
+
+  .submit-btn {
+    max-width: 16rem;
+    padding: 0.75rem 1.25rem;
+    font-size: 0.6875rem;
+  }
+
+  /* Catch Us Section */
+  .catch-us-section {
+    padding: 2.5rem 0 5rem 0;
+  }
+
+  .catch-us-card {
+    max-width: 18rem;
+  }
+
+  .catch-us-card-title {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .catch-us-subtitle {
+    font-size: 0.625rem;
+    line-height: 1rem;
+  }
+}
+
+/* ===================================
+   LANDSCAPE MOBILE OPTIMIZATION
+   =================================== */
+
+@media (max-width: 767px) and (orientation: landscape) {
+  .contact-hero-setion {
+    padding: 3rem 0 4rem 0;
+  }
+
+  .contact-us-section {
+    padding: 3rem 0 5rem 0;
+  }
+
+  .catch-us-section {
+    padding: 2.5rem 0 4rem 0;
+  }
+
+  .catch-us-card-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}

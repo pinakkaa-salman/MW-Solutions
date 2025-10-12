@@ -1,0 +1,835 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy";
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.section-title {
+  color: var(--White, #fff);
+  text-align: center;
+  font-family: "Euphemia UCAS";
+  font-size: 2.8125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 3.375rem */
+  letter-spacing: 0.0225rem;
+}
+.section-para {
+  color: var(--White, #fff);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 1.625rem;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 2.6875rem; /* 165.385% */
+  text-transform: capitalize;
+}
+.service-section {
+  height: auto;
+  padding: 9.19rem 0 10.6rem 0;
+  background: var(--BG-Dark, #171717);
+  position: relative;
+  background-image: url(./images/hero-bg.png);
+  /* background: linear-gradient(180deg, rgba(23, 23, 23, 0.30) 0%, rgba(23, 23, 23, 0.75) 100%), url(./images/hero-bg.png) lightgray 0px -198.559px / 100% 171.144% no-repeat, #171717; */
+}
+.service-section-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.service-section-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  /* background-image: url(./images/hero-bg.png); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+}
+.service-section-subtitle {
+  color: var(--Accent-1, #3ed5dd);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 1.3125rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.5rem; /* 114.286% */
+  letter-spacing: 0.105rem;
+}
+.service-section-title {
+  color: #fff;
+  text-align: center;
+  font-family: "Euphemia UCAS";
+  font-size: 3.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 3.75rem */
+  letter-spacing: 0.025rem;
+  width: 67.5rem;
+}
+.service-section-title span {
+  background: linear-gradient(90deg, #01a5cd 0%, #9ee44d 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Euphemia UCAS";
+  font-size: 3.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 0.025rem;
+}
+
+/* security-section */
+
+.security-section {
+  height: auto;
+  padding: 6rem 0 4.5rem 0;
+  background: var(--BG-Dark, #171717);
+  position: relative;
+}
+.security-section-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.2rem;
+}
+
+/* security-strategy-overview */
+
+.security-strategy-overview {
+  height: auto;
+  padding: 4rem 0 6rem 0;
+  background: var(--BG-Dark, #171717);
+  position: relative;
+}
+.security-strategy-overview-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+}
+.security-strategy-card-wrapper {
+  display: grid;
+  /* grid-template-columns: repeat(3fr, 1fr); */
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  gap: 3rem;
+}
+.security-strategy-card {
+  width: 21.75rem;
+  height: 12.8125rem;
+  flex-shrink: 0;
+  position: relative;
+}
+.security-strategy-card-icon-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.security-strategy-card-icon {
+  display: flex;
+  width: 5rem;
+  height: 5rem;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 2.5rem;
+  border: 1px solid #3ed5dd;
+  background: #171717;
+  position: absolute;
+  top: 0;
+  z-index: 99;
+}
+.security-strategy-card-title-wrapper {
+  display: flex;
+  width: 21.75rem;
+  padding: 4rem 2.625rem 2.375rem 2.625rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  border: 1 solid #fff;
+  background: linear-gradient(
+    97deg,
+    #171717 -62.94%,
+    #323335 -62.92%,
+    rgba(90, 90, 90, 0) 104.42%,
+    #171717 174.24%
+  );
+  backdrop-filter: blur(25px);
+  margin-top: 2.5rem;
+}
+.security-strategy-card-title {
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 1.3125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+  letter-spacing: 0.0525rem;
+  width: 15rem;
+  flex-shrink: 0;
+}
+.padi {
+  padding: 0 1rem;
+}
+
+/* key-services */
+
+.key-services {
+  height: auto;
+  padding: 6rem 0 8.8rem 0;
+  background: var(--BG-Dark, #171717);
+  position: relative;
+  /* background: linear-gradient(180deg, #171717 0%, rgba(23, 23, 23, 0) 100%),
+    linear-gradient(180deg, rgba(23, 23, 23, 0) 0%, #171717 100%),
+    url(./images/key-services-bg.png) lightgray 50% / cover no-repeat, #171717; */
+  background-image: url(./images/key-services-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.key-services-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5.12rem;
+}
+.key-service-card-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+.key-service-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.81rem;
+}
+.key-service-card-title {
+  color: var(--White, #fff);
+  font-family: Roboto;
+  font-size: 2.1875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.1875rem; 
+  letter-spacing: 0.0875rem;
+}
+.key-service-card-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 31rem;
+}
+.key-service-card-content {
+color:  #FFF;
+font-family: Roboto;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: 1rem;
+letter-spacing: 0.06563rem;
+}
+.key-service-card-content-lite {
+  color:  #ffffff93;
+font-family: Roboto;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: 1rem; /* 137.5% */
+letter-spacing: 0.04rem;
+}
+
+
+
+/* contact-section */
+
+.contact-section {
+  height: auto;
+  padding: 5rem 0 7.44rem 0;
+  background: var(--BG-Dark, #171717);
+}
+.contact-section-wrapper {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+.contact-section-content-wrapper {
+  padding-top: 3rem;
+}
+.contact-section-title {
+  color: #fff;
+  font-family: "Euphemia UCAS";
+  font-size: 2.8125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.625rem; /* 128.889% */
+  width: 34.0625rem;
+}
+.contact-section-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.form-input {
+  display: flex;
+  width: 38.125rem;
+  height: 4rem;
+  padding: 1.25rem 32.875rem 1.3125rem 0.5625rem;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 1rem;
+  background: rgba(170, 170, 170, 0.06);
+  backdrop-filter: blur(25px);
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-feature-settings: "liga" off, "clig" off;
+
+  /* Main Text/P1 400 */
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4375rem; /* 143.75% */
+}
+.form-input-big {
+  display: flex;
+  width: 38.125rem;
+  height: 10rem;
+  padding: 1rem 29.8125rem 7.5625rem 1.3125rem;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 1rem;
+  background: rgba(170, 170, 170, 0.06);
+  backdrop-filter: blur(25px);
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-feature-settings: "liga" off, "clig" off;
+
+  /* Main Text/P1 400 */
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4375rem; /* 143.75% */
+}
+.form-button-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+.form-button {
+  display: flex;
+  width: 20.3675rem;
+  height: 2.875rem;
+  padding: 0.0625rem;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 0.125rem;
+  border: var(--stroke-weight-1, 1px) solid #049995;
+  background: #01605e;
+  display: flex;
+  padding: 0.9375rem 2.3rem 0.9375rem 2.0625rem;
+  align-items: center;
+  color: var(
+    --royaltemplate-framer-website-white,
+    var(--color-white-solid, #fff)
+  );
+  text-align: center;
+  font-family: Roboto;
+  font-size: var(--font-size-14, 0.875rem);
+  font-style: normal;
+  font-weight: var(--font-weight-500, 500);
+  line-height: var(--font-size-14, 0.875rem); /* 100% */
+  letter-spacing: var(--letter-spacing-1_7, 0.10625rem);
+  text-transform: uppercase;
+}
+.right-arrow {
+  width: 1.48125rem;
+  height: 1.375rem;
+  flex-shrink: 0;
+}
+
+
+
+
+
+/* ===================================
+   TABLET RESPONSIVE (768px - 1024px)
+   =================================== */
+
+@media (max-width: 1024px) {
+  .main-container {
+    padding: 0 2rem;
+  }
+
+  .section-title {
+    font-size: 2.25rem;
+    line-height: 110%;
+  }
+
+  .section-para {
+    font-size: 1.25rem;
+    line-height: 2rem;
+    width: 100%;
+    max-width: 45rem;
+  }
+
+  /* Service Section */
+  .service-section {
+    padding: 6rem 0 7rem 0;
+  }
+
+  .service-section-subtitle {
+    font-size: 1.125rem;
+  }
+
+  .service-section-title {
+    font-size: 2.5rem;
+    width: 100%;
+    max-width: 50rem;
+    line-height: 110%;
+  }
+
+  .service-section-title span {
+    font-size: 2.5rem;
+  }
+
+  /* Security Section */
+  .security-section {
+    padding: 5rem 0 4rem 0;
+  }
+
+  .security-section-wrapper {
+    gap: 1.5rem;
+  }
+
+  /* Security Strategy Overview */
+  .security-strategy-overview {
+    padding: 4rem 0 5rem 0;
+  }
+
+  .security-strategy-overview-wrapper {
+    gap: 4rem;
+  }
+
+  .security-strategy-card-wrapper {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+
+  .security-strategy-card {
+    width: 100%;
+    max-width: 22rem;
+    height: auto;
+  }
+
+  .security-strategy-card-title-wrapper {
+    width: 100%;
+    padding: 4rem 1.5rem 2rem 1.5rem;
+  }
+
+  .security-strategy-card-title {
+    width: 100%;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  /* Key Services */
+  .key-services {
+    padding: 5rem 0 6rem 0;
+  }
+
+  .key-services-wrapper {
+    gap: 4rem;
+  }
+
+  .key-service-card-wrapper {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .key-service-card-content-wrapper {
+    width: 100%;
+    max-width: 35rem;
+  }
+
+  .key-service-card-title {
+    font-size: 1.875rem;
+    line-height: 2.5rem;
+  }
+
+  /* Contact Section */
+  .contact-section {
+    padding: 4rem 0 6rem 0;
+  }
+
+  .contact-section-wrapper {
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .contact-section-content-wrapper {
+    padding-top: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-section-title {
+    font-size: 2.25rem;
+    line-height: 3rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact-section-form {
+    width: 100%;
+    align-items: center;
+  }
+
+  .form-input,
+  .form-input-big {
+    width: 100%;
+    max-width: 35rem;
+  }
+}
+
+/* ===================================
+   MOBILE RESPONSIVE (320px - 767px)
+   =================================== */
+
+@media (max-width: 767px) {
+  .main-container {
+    padding: 0 1rem;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+    line-height: 110%;
+    width: 100%;
+  }
+
+  .section-para {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    width: 100%;
+    text-transform: none;
+  }
+
+  /* Service Section */
+  .service-section {
+    padding: 4rem 0 5rem 0;
+  }
+
+  .service-section-content-wrapper {
+    gap: 1rem;
+  }
+
+  .service-section-subtitle {
+    font-size: 0.875rem;
+    letter-spacing: 0.07rem;
+  }
+
+  .service-section-title {
+    font-size: 1.75rem;
+    width: 100%;
+    line-height: 110%;
+    letter-spacing: 0.015rem;
+  }
+
+  .service-section-title span {
+    font-size: 1.75rem;
+    line-height: 110%;
+  }
+
+  /* Security Section */
+  .security-section {
+    padding: 3rem 0 3rem 0;
+  }
+
+  .security-section-wrapper {
+    gap: 1.5rem;
+  }
+
+  /* Security Strategy Overview */
+  .security-strategy-overview {
+    padding: 3rem 0 4rem 0;
+  }
+
+  .security-strategy-overview-wrapper {
+    gap: 3rem;
+  }
+
+  .security-strategy-card-wrapper {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .security-strategy-card {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .security-strategy-card-icon-wrapper {
+    position: relative;
+    /* margin-bottom: 2.5rem; */
+  }
+
+  .security-strategy-card-icon {
+    width: 4rem;
+    height: 4rem;
+    padding: 0.75rem;
+    position: static;
+  }
+
+  .security-strategy-card-title-wrapper {
+    width: 100%;
+    padding: 2rem 1.5rem;
+    margin-top: 0;
+  }
+
+  .security-strategy-card-title {
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.04rem;
+  }
+
+  .padi {
+    padding: 0;
+  }
+
+  /* Key Services */
+  .key-services {
+    padding: 4rem 0 5rem 0;
+  }
+
+  .key-services-wrapper {
+    gap: 3rem;
+  }
+
+  .key-service-card-wrapper {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .key-service-card {
+    gap: 1.5rem;
+  }
+
+  .key-service-card-title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: 0.06rem;
+    text-align: center;
+  }
+
+  .key-service-card-content-wrapper {
+    width: 100%;
+    gap: 1.5rem;
+  }
+
+  .key-service-card-content,
+  .key-service-card-content-lite {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    letter-spacing: 0.035rem;
+  }
+
+  /* Contact Section */
+  .contact-section {
+    padding: 3rem 0 5rem 0;
+  }
+
+  .contact-section-wrapper {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .contact-section-content-wrapper {
+    padding-top: 0;
+  }
+
+  .contact-section-title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact-section-form {
+    width: 100%;
+    gap: 0.75rem;
+  }
+
+  .form-input {
+    width: 100%;
+    height: 3.5rem;
+    padding: 1rem;
+    text-align: left;
+    font-size: 0.875rem;
+  }
+
+  .form-input-big {
+    width: 100%;
+    height: 8rem;
+    padding: 1rem;
+    text-align: left;
+    font-size: 0.875rem;
+  }
+
+  .form-button-wrapper {
+    margin-top: 0.5rem;
+  }
+
+  .form-button {
+    width: 100%;
+    max-width: 18rem;
+    height: auto;
+    padding: 0.875rem 1.5rem;
+    font-size: 0.75rem;
+    gap: 0.5rem;
+  }
+
+  .right-arrow {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
+/* ===================================
+   EXTRA SMALL MOBILE (320px - 480px)
+   =================================== */
+
+@media (max-width: 480px) {
+  .main-container {
+    padding: 0 0.875rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .section-para {
+    font-size: 0.875rem;
+    line-height: 1.35rem;
+  }
+
+  /* Service Section */
+  .service-section {
+    padding: 3rem 0 4rem 0;
+  }
+
+  .service-section-subtitle {
+    font-size: 0.75rem;
+  }
+
+  .service-section-title {
+    font-size: 1.5rem;
+  }
+
+  .service-section-title span {
+    font-size: 1.5rem;
+  }
+
+  /* Security Strategy Cards */
+  .security-strategy-card-wrapper {
+    gap: 2.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .security-strategy-card-icon {
+    width: 3.5rem;
+    height: 3.5rem;
+    padding: 0.625rem;
+  }
+
+  .security-strategy-card-title-wrapper {
+    padding: 1.75rem 1rem;
+  }
+
+  .security-strategy-card-title {
+    font-size: 0.875rem;
+    line-height: 1.35rem;
+  }
+
+  /* Key Services */
+  .key-service-card-title {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .key-service-card-content-wrapper {
+    gap: 1.25rem;
+  }
+
+  .key-service-card-content,
+  .key-service-card-content-lite {
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+  }
+
+  /* Contact Section */
+  .contact-section-title {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .form-button {
+    max-width: 16rem;
+    padding: 0.75rem 1.25rem;
+    font-size: 0.6875rem;
+  }
+}
+
+/* ===================================
+   LANDSCAPE MOBILE OPTIMIZATION
+   =================================== */
+
+@media (max-width: 767px) and (orientation: landscape) {
+  .service-section {
+    padding: 3rem 0 4rem 0;
+  }
+
+  .security-strategy-overview {
+    padding: 2.5rem 0 3rem 0;
+  }
+
+  .security-strategy-card-wrapper {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .key-services {
+    padding: 3rem 0 4rem 0;
+  }
+}
