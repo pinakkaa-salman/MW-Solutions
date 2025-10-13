@@ -1,0 +1,732 @@
+/* ===================================
+   BASE STYLES
+   =================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy";
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/* ===================================
+   COMMON SECTIONS
+   =================================== */
+
+.section-title {
+  color: var(--White, #fff);
+  text-align: center;
+  font-family: "Euphemia UCAS";
+  font-size: 2.8125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 0.0225rem;
+}
+
+.section-para {
+  color: var(--White, #fff);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 1.625rem;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 2.6875rem;
+  text-transform: capitalize;
+}
+
+/* ===================================
+   SERVICE HERO SECTION
+   =================================== */
+
+.service-section {
+  height: auto;
+  padding: 9.19rem 0 10.6rem 0;
+  background: var(--BG-Dark, #171717);
+  position: relative;
+  background-image: url(./images/hero-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.service-section-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-section-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+}
+
+.service-section-subtitle {
+  color: var(--Accent-1, #3ed5dd);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 1.3125rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.5rem;
+  letter-spacing: 0.105rem;
+}
+
+.service-section-title {
+  color: #fff;
+  text-align: center;
+  font-family: "Euphemia UCAS";
+  font-size: 3.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 0.025rem;
+  width: 67.5rem;
+  max-width: 100%;
+}
+
+.service-section-title span {
+  background: linear-gradient(90deg, #01a5cd 0%, #9ee44d 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Euphemia UCAS";
+  font-size: 3.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 0.025rem;
+}
+
+/* ===================================
+   ELECTRICAL POWER OVERVIEW SECTION
+   =================================== */
+
+.electrical-power-overview-section {
+  height: auto;
+  padding: 6rem 0 4rem 0;
+  background: var(--BG-Dark, #171717);
+  position: relative;
+}
+
+.electrical-power-overview-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.electrical-power-image-wrapper {
+  width: 45%;
+  max-width: 35rem;
+  flex-shrink: 0;
+}
+
+.electrical-power-image {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+.electrical-power-content-wrapper {
+  width: 55%;
+  max-width: 42rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.electrical-power-title {
+  color: #fff;
+  font-family: "Euphemia UCAS";
+  font-size: 2.8125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 0.025rem;
+}
+
+.electrical-power-subtitle {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: 0.03rem;
+  margin-top: 1rem;
+}
+
+.electrical-power-para {
+  color: rgba(255, 255, 255, 0.85);
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.75rem;
+  letter-spacing: 0.04rem;
+}
+
+/* ===================================
+   ELECTRICAL POWER CONTENT SECTION
+   =================================== */
+
+.electrical-power-content-section {
+  height: auto;
+  padding: 4rem 0 6rem 0;
+  background: var(--BG-Dark, #171717);
+  position: relative;
+}
+
+.electrical-power-content-section-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.content-block {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.content-block-para {
+  color: rgba(255, 255, 255, 0.85);
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.75rem;
+  letter-spacing: 0.04rem;
+  text-align: justify;
+}
+.content-block-para-extra {
+  color: rgba(255, 255, 255, 0.85);
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.75rem;
+  letter-spacing: 0.04rem;
+  text-align: justify;
+}
+
+.cta-text {
+  color: rgba(255, 255, 255, 0.9);
+  font-family: Roboto;
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.75rem;
+  letter-spacing: 0.04rem;
+  margin-top: 1rem;
+}
+
+.cta-text strong {
+  color: #3ed5dd;
+  font-weight: 500;
+}
+
+/* ===================================
+   CONTACT SECTION
+   =================================== */
+
+.contact-section {
+  height: auto;
+  padding: 5rem 0 7.44rem 0;
+  background: var(--BG-Dark, #171717);
+}
+
+.contact-section-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-section-content-wrapper {
+  padding-top: 3rem;
+}
+
+.contact-section-title {
+  color: #fff;
+  font-family: "Euphemia UCAS";
+  font-size: 2.8125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.625rem;
+  width: 34.0625rem;
+  max-width: 100%;
+}
+
+.contact-section-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-input {
+  display: flex;
+  width: 38.125rem;
+  max-width: 100%;
+  height: 4rem;
+  padding: 1.25rem 32.875rem 1.3125rem 0.5625rem;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 1rem;
+  background: rgba(170, 170, 170, 0.06);
+  backdrop-filter: blur(25px);
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4375rem;
+}
+
+.form-input-big {
+  display: flex;
+  width: 38.125rem;
+  max-width: 100%;
+  height: 10rem;
+  padding: 1rem 29.8125rem 7.5625rem 1.3125rem;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 1rem;
+  background: rgba(170, 170, 170, 0.06);
+  backdrop-filter: blur(25px);
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4375rem;
+}
+
+.form-button-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.form-button {
+  display: flex;
+  width: 20.3675rem;
+  height: 2.875rem;
+  padding: 0.0625rem;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 0.125rem;
+  border: var(--stroke-weight-1, 1px) solid #049995;
+  background: #01605e;
+  display: flex;
+  padding: 0.9375rem 2.3rem 0.9375rem 2.0625rem;
+  align-items: center;
+  color: var(
+    --royaltemplate-framer-website-white,
+    var(--color-white-solid, #fff)
+  );
+  text-align: center;
+  font-family: Roboto;
+  font-size: var(--font-size-14, 0.875rem);
+  font-style: normal;
+  font-weight: var(--font-weight-500, 500);
+  line-height: var(--font-size-14, 0.875rem);
+  letter-spacing: var(--letter-spacing-1_7, 0.10625rem);
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form-button:hover {
+  background: #027b78;
+  transform: translateY(-2px);
+}
+
+.right-arrow {
+  width: 1.48125rem;
+  height: 1.375rem;
+  flex-shrink: 0;
+  margin-left: 0.5rem;
+}
+
+/* ===================================
+   TABLET RESPONSIVE (768px - 1024px)
+   =================================== */
+
+@media (max-width: 1024px) {
+  .main-container {
+    padding: 0 2rem;
+  }
+
+  .section-title {
+    font-size: 2.25rem;
+    line-height: 110%;
+  }
+
+  .section-para {
+    font-size: 1.25rem;
+    line-height: 2rem;
+    width: 100%;
+    max-width: 45rem;
+  }
+
+  /* Service Section */
+  .service-section {
+    padding: 6rem 0 7rem 0;
+  }
+
+  .service-section-subtitle {
+    font-size: 1.125rem;
+  }
+
+  .service-section-title {
+    font-size: 2.5rem;
+    width: 100%;
+    max-width: 50rem;
+    line-height: 110%;
+  }
+
+  .service-section-title span {
+    font-size: 2.5rem;
+  }
+
+  /* Electrical Power Overview */
+  .electrical-power-overview-section {
+    padding: 5rem 0 3.5rem 0;
+  }
+
+  .electrical-power-overview-wrapper {
+    gap: 3rem;
+  }
+
+  .electrical-power-title {
+    font-size: 2.25rem;
+  }
+
+  .electrical-power-subtitle {
+    font-size: 1.25rem;
+  }
+
+  .electrical-power-para,
+  .content-block-para,
+  .cta-text {
+    font-size: 0.9375rem;
+    line-height: 1.625rem;
+  }
+
+  .electrical-power-content-section {
+    padding: 3.5rem 0 5rem 0;
+  }
+
+  /* Contact Section */
+  .contact-section {
+    padding: 4rem 0 6rem 0;
+  }
+
+  .contact-section-wrapper {
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .contact-section-content-wrapper {
+    padding-top: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-section-title {
+    font-size: 2.25rem;
+    line-height: 3rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact-section-form {
+    width: 100%;
+    align-items: center;
+  }
+
+  .form-input,
+  .form-input-big {
+    width: 100%;
+    max-width: 35rem;
+  }
+}
+
+/* ===================================
+   MOBILE RESPONSIVE (320px - 767px)
+   =================================== */
+
+@media (max-width: 767px) {
+  .main-container {
+    padding: 0 1rem;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+    line-height: 110%;
+    width: 100%;
+  }
+
+  .section-para {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    width: 100%;
+    text-transform: none;
+  }
+
+  /* Service Section */
+  .service-section {
+    padding: 4rem 0 5rem 0;
+  }
+
+  .service-section-content-wrapper {
+    gap: 1rem;
+  }
+
+  .service-section-subtitle {
+    font-size: 0.875rem;
+    letter-spacing: 0.07rem;
+  }
+
+  .service-section-title {
+    font-size: 1.75rem;
+    width: 100%;
+    line-height: 110%;
+    letter-spacing: 0.015rem;
+  }
+
+  .service-section-title span {
+    font-size: 1.75rem;
+    line-height: 110%;
+  }
+
+  /* Electrical Power Overview */
+  .electrical-power-overview-section {
+    padding: 4rem 0 3rem 0;
+  }
+
+  .electrical-power-overview-wrapper {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .electrical-power-image-wrapper {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .electrical-power-content-wrapper {
+    width: 100%;
+    max-width: 100%;
+    gap: 1.5rem;
+  }
+
+  .electrical-power-title {
+    font-size: 1.75rem;
+  }
+
+  .electrical-power-subtitle {
+    font-size: 1.125rem;
+    margin-top: 0.75rem;
+  }
+
+  .electrical-power-para,
+  .content-block-para {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    text-align: left;
+  }
+
+  .cta-text {
+    font-size: 0.9375rem;
+    line-height: 1.5rem;
+  }
+
+  .electrical-power-content-section {
+    padding: 3rem 0 4rem 0;
+  }
+
+  .content-block {
+    gap: 1.25rem;
+  }
+
+  /* Contact Section */
+  .contact-section {
+    padding: 3rem 0 5rem 0;
+  }
+
+  .contact-section-wrapper {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .contact-section-content-wrapper {
+    padding-top: 0;
+  }
+
+  .contact-section-title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact-section-form {
+    width: 100%;
+    gap: 0.75rem;
+  }
+
+  .form-input {
+    width: 100%;
+    height: 3.5rem;
+    padding: 1rem;
+    text-align: left;
+    font-size: 0.875rem;
+  }
+
+  .form-input-big {
+    width: 100%;
+    height: 8rem;
+    padding: 1rem;
+    text-align: left;
+    font-size: 0.875rem;
+  }
+
+  .form-button-wrapper {
+    margin-top: 0.5rem;
+  }
+
+  .form-button {
+    width: 100%;
+    max-width: 18rem;
+    height: auto;
+    padding: 0.875rem 1.5rem;
+    font-size: 0.75rem;
+    gap: 0.5rem;
+  }
+
+  .right-arrow {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
+/* ===================================
+   EXTRA SMALL MOBILE (320px - 480px)
+   =================================== */
+
+@media (max-width: 480px) {
+  .main-container {
+    padding: 0 0.875rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .section-para {
+    font-size: 0.875rem;
+    line-height: 1.35rem;
+  }
+
+  /* Service Section */
+  .service-section {
+    padding: 3rem 0 4rem 0;
+  }
+
+  .service-section-subtitle {
+    font-size: 0.75rem;
+  }
+
+  .service-section-title {
+    font-size: 1.5rem;
+  }
+
+  .service-section-title span {
+    font-size: 1.5rem;
+  }
+
+  /* Electrical Power Overview */
+  .electrical-power-overview-section {
+    padding: 3rem 0 2.5rem 0;
+  }
+
+  .electrical-power-overview-wrapper {
+    gap: 2rem;
+  }
+
+  .electrical-power-title {
+    font-size: 1.5rem;
+  }
+
+  .electrical-power-subtitle {
+    font-size: 1rem;
+  }
+
+  .electrical-power-para,
+  .content-block-para,
+  .cta-text {
+    font-size: 0.8125rem;
+    line-height: 1.35rem;
+  }
+
+  .electrical-power-content-section {
+    padding: 2.5rem 0 3.5rem 0;
+  }
+
+  /* Contact Section */
+  .contact-section-title {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .form-button {
+    max-width: 16rem;
+    padding: 0.75rem 1.25rem;
+    font-size: 0.6875rem;
+  }
+}
+
+/* ===================================
+   LANDSCAPE MOBILE OPTIMIZATION
+   =================================== */
+
+@media (max-width: 767px) and (orientation: landscape) {
+  .service-section {
+    padding: 3rem 0 4rem 0;
+  }
+
+  .electrical-power-overview-section {
+    padding: 2.5rem 0 2rem 0;
+  }
+
+  .electrical-power-content-section {
+    padding: 2rem 0 3rem 0;
+  }
+}
