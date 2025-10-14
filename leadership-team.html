@@ -3,15 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MW Solutions - Electrical Power Providers</title>
-    <link rel="stylesheet" href="./industry.css">
+    <title>MW Solutions - Leadership Team</title>
+    <link rel="stylesheet" href="./services-solutions/style.css">
     <link rel="stylesheet" href="./navbar.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <style>
+        /* Leadership Team Styles */
+        .leadership-section {
+            height: auto;
+            padding: 6rem 0 8rem 0;
+            background: var(--BG-Dark, #171717);
+            position: relative;
+        }
 
+        .leadership-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 5rem;
+        }
+
+        .leadership-intro {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 4rem 3rem;
+        }
+
+        .team-member-card {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .team-member-role {
+            color: #3ed5dd;
+            font-family: Roboto;
+            font-size: 0.875rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.2rem;
+            letter-spacing: 0.105rem;
+            text-transform: uppercase;
+        }
+
+        .team-member-name {
+            color: #fff;
+            font-family: "Euphemia UCAS";
+            font-size: 2.1875rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 120%;
+            letter-spacing: 0.025rem;
+            margin-top: -0.5rem;
+        }
+
+        .team-member-description {
+            color: rgba(255, 255, 255, 0.85);
+            font-family: Roboto;
+            font-size: 0.9375rem;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 1.625rem;
+            letter-spacing: 0.0375rem;
+            text-align: justify;
+        }
+
+        /* Tablet Responsive */
+        @media (max-width: 1024px) {
+            .leadership-section {
+                padding: 5rem 0 6rem 0;
+            }
+
+            .leadership-wrapper {
+                gap: 4rem;
+            }
+
+            .team-grid {
+                gap: 3.5rem 2.5rem;
+            }
+
+            .team-member-name {
+                font-size: 1.875rem;
+            }
+
+            .team-member-description {
+                font-size: 0.875rem;
+                line-height: 1.5rem;
+            }
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 767px) {
+            .leadership-section {
+                padding: 4rem 0 5rem 0;
+            }
+
+            .leadership-wrapper {
+                gap: 3rem;
+            }
+
+            .team-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .team-member-role {
+                font-size: 0.75rem;
+            }
+
+            .team-member-name {
+                font-size: 1.5rem;
+            }
+
+            .team-member-description {
+                font-size: 0.8125rem;
+                line-height: 1.4rem;
+                text-align: left;
+            }
+        }
+
+        /* Extra Small Mobile */
+        @media (max-width: 480px) {
+            .leadership-section {
+                padding: 3rem 0 4rem 0;
+            }
+
+            .team-grid {
+                gap: 2.5rem;
+            }
+
+            .team-member-name {
+                font-size: 1.375rem;
+            }
+
+            .team-member-description {
+                font-size: 0.8rem;
+                line-height: 1.35rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <main>
@@ -94,60 +231,85 @@
                 </div>
             </div>
         </nav>
-        <!-- Mobile Overlay -->
         <div class="mobile-overlay"></div>
 
         <section class="service-section">
             <div class="main-container">
                 <div class="service-section-wrapper">
                     <div class="service-section-content-wrapper">
-                        <p class="service-section-subtitle">MARITIME</p>
-                        <h1 class="service-section-title">
-                            Strengthening <span>Cyber Resilience</span> Across Maritime Operations
-                        </h1>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <section class="electrical-power-overview-section">
-            <div class="main-container">
-                <div class="electrical-power-overview-wrapper">
-                    <div class="electrical-power-image-wrapper">
-                        <img src="./images/electrical-power.jpg" alt="Electrical Power Infrastructure" class="electrical-power-image">
-                    </div>
-                    <div class="electrical-power-content-wrapper">
-                        <h1 class="electrical-power-title">Maritime</h1>
-                        <p class="electrical-power-para">Modern vessels have greatly benefited from connected technology, leading to enhanced fleet efficiency, optimized routes, and improved profit margins. To safeguard these advantages, it is essential for your organization to adhere to proven OT cybersecurity practices that align with industry standards and objectives.</p>
-                        <h2 class="electrical-power-subtitle">Enhancing Cyber Resilience in Maritime Operations:</h2>
-                        <p class="electrical-power-para">To ensure cyber-resilient shipping operations, MW Solutions offers a comprehensive approach to protecting key on-shore and offshore maritime assets. Our OT cybersecurity professionals identify risks and provide actionable strategies to address security challenges.</p>
+                        <p class="service-section-subtitle">LEADERSHIP</p>
+                        <h1 class="service-section-title">Meet Our <span>Executive Team</span></h1>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="electrical-power-content-section">
+        <section class="leadership-section">
             <div class="main-container">
-                <div class="electrical-power-content-section-wrapper">
-                    <div class="content-block">
-                        <p class="content-block-para">From supporting organizations with legacy vessel technology to guiding the development of new offshore facilities, we assist throughout the entire lifecycle of maritime assets</p>
+                <div class="leadership-wrapper">
+                    <div class="team-grid">
+                        <!-- CEO -->
+                        <div class="team-member-card">
+                            <p class="team-member-role">CEO</p>
+                            <h2 class="team-member-name">Aicha Dellache</h2>
+                            <div class="team-member-description">
+                                <p>As the Chief Executive Officer of MW Solutions, the CEO is at the helm of the company's mission to advance OT cybersecurity solutions. With a robust 14-year background in operational technology and cybersecurity, the CEO spearheads the strategic direction and implementation of key cybersecurity initiatives.</p>
+                                <p style="margin-top: 1rem;">Their leadership is pivotal in ensuring that MW Solutions consistently delivers innovative and cutting-edge solutions designed to protect complex industrial control systems and automated processes.</p>
+                                <p style="margin-top: 1rem;">Under their guidance, the company continues to lead the industry in defending against cyber threats, optimizing security frameworks, and enhancing operational resilience for its clients.</p>
+                            </div>
+                        </div>
+
+                        <!-- CFO -->
+                        <div class="team-member-card">
+                            <p class="team-member-role">CFO</p>
+                            <h2 class="team-member-name">Eyed K</h2>
+                            <div class="team-member-description">
+                                <p>As Chief Financial Officer at MW Solutions, this executive plays a crucial role in shaping and executing the company's financial strategy. With more than 12 years of expertise in financial planning, risk management, and reporting, the CFO ensures financial health and drives sustainable growth.</p>
+                                <p style="margin-top: 1rem;">Responsible for overseeing budgeting, forecasting, and capital management, the CFO supports strategic decision-making and operational efficiency. The CFO is instrumental in managing investments, optimizing the capital structure, and maintaining compliance with regulatory requirements.</p>
+                                <p style="margin-top: 1rem;">By leading the finance team and collaborating with senior management, the CFO provides critical financial insights and fosters a culture of financial excellence across the organization.</p>
+                            </div>
+                        </div>
+
+                        <!-- Vice President - Risk Assessment Services -->
+                        <div class="team-member-card">
+                            <p class="team-member-role">Vice President – Risk Assessment Services</p>
+                            <h2 class="team-member-name">Surendar Singh</h2>
+                            <div class="team-member-description">
+                                <p>As Vice President of Risk Assessment Services at MW Solutions, this executive brings over 11 years of expertise in risk management and cybersecurity to spearhead efforts in identifying and mitigating risks within operational technology environments.</p>
+                                <p style="margin-top: 1rem;">They oversee the development and implementation of comprehensive risk assessment frameworks, evaluating vulnerabilities, analyzing potential threats, and ensuring robust security measures to protect critical industrial systems. Under their leadership, MW Solutions provides clients with strategic insights and solutions to enhance their security posture and safeguard against evolving cyber threats.</p>
+                            </div>
+                        </div>
+
+                        <!-- CTO -->
+                        <div class="team-member-card">
+                            <p class="team-member-role">CTO</p>
+                            <h2 class="team-member-name">Faris Mohammad</h2>
+                            <div class="team-member-description">
+                                <p>As Chief Technology Officer at MW Solutions, this executive leads technological innovation and strategy in OT cybersecurity. With over 10 years of deep expertise in operational technology and cybersecurity solutions, they drive the development and implementation of advanced technologies to protect critical industrial systems.</p>
+                                <p style="margin-top: 1rem;">Their role includes overseeing the integration of cutting-edge technologies, innovating new solutions to address emerging threats, and managing strategic technology partnerships. They also lead research and development efforts to continuously improve and adapt our cybersecurity offerings, ensuring MW Solutions remains at the forefront of delivering effective and innovative solutions to enhance clients' operational resilience and safety.</p>
+                            </div>
+                        </div>
+
+                        <!-- Vice President - Business Development -->
+                        <div class="team-member-card">
+                            <p class="team-member-role">Vice President – Business Development</p>
+                            <h2 class="team-member-name">Ahmed Osman</h2>
+                            <div class="team-member-description">
+                                <p>As Vice President of Business Development at MW Solutions, this executive is responsible for driving growth strategies and market expansion in the OT cybersecurity sector. With more than 12 years of experience in business development and a deep understanding of operational technology, they focus on identifying and pursuing new business opportunities to broaden the company's market presence.</p>
+                                <p style="margin-top: 1rem;">This role involves forging strategic partnerships, aligning business goals with cybersecurity advancements, and developing initiatives to penetrate new markets. Their efforts are crucial in positioning MW Solutions as a leader in providing innovative cybersecurity solutions while fostering strong client relationships and driving revenue growth.</p>
+                            </div>
+                        </div>
+
+                        <!-- Lead OT Consultant -->
+                        <div class="team-member-card">
+                            <p class="team-member-role">Lead OT Consultant</p>
+                            <h2 class="team-member-name">H N Sharma</h2>
+                            <div class="team-member-description">
+                                <p>As Lead OT Consultant at MW Solutions, this executive brings over 13 years of expertise in OT systems and cybersecurity to deliver expert guidance and solutions. They play a pivotal role in assessing and enhancing security measures for industrial control systems.</p>
+                                <p style="margin-top: 1rem;">Their extensive experience enables them to provide comprehensive assessments, develop tailored security strategies, and implement best practices that ensure the protection and reliability of critical operational technology infrastructure across various industrial sectors.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="content-block">
-                        <p class="content-block-para">Our deep industry knowledge, gained from assessing terminals, ports, cargo vessels, passenger vessels, and offshore facilities, enables us to provide a detailed and practical approach to identifying cyber risks and improving security.</p>
-                    </div>
-                    <div class="content-block">
-                        <p class="content-block-para">We help establish a tailored OT security framework that meets industry regulations and reduces operational risk. Contact us to learn more about safeguarding your critical maritime assets.</p>
-                    </div>
-                    <div class="content-block">
-                        <p class="electrical-power-subtitle">Need More Information:</p>
-                    </div>
-                    <div class="content-block">
-                        <p class="content-block-para">Our specialized expertise enables us to support every stage of the process, from designing and developing secure industrial facilities to managing and maintaining operations. Let our OT cybersecurity professionals help enhance the cyber resilience of your critical assets, ensuring robust protection and seamless functionality.</p>
-                    </div>
-                    <!-- <div class="content-block">
-                        <p class="cta-text"><strong>Contact Us</strong> to learn how Applied Risk can strengthen the OT cybersecurity posture of your power infrastructure through a comprehensive strategy covering prevention, detection, response, and recovery.</p>
-                    </div> -->
                 </div>
             </div>
         </section>
@@ -156,14 +318,14 @@
             <div class="main-container">
                 <div class="contact-section-wrapper">
                     <div class="contact-section-content-wrapper">
-                        <h1 class="contact-section-title">Secure Your Power Infrastructure with Expert Guidance</h1>
+                        <h1 class="contact-section-title">Connect with Our Leadership Team</h1>
                     </div>
                     <form action="" class="contact-section-form">
                         <input type="text" placeholder="Name" class="form-input">
                         <input type="email" placeholder="Email" class="form-input">
                         <textarea name="" id="" cols="30" rows="10" placeholder="Message" class="form-input-big"></textarea>
                         <div class="form-button-wrapper">
-                            <button type="submit" class="form-button">Request Consultation <img src="./icons/right-arrow.svg" alt="Right Arrow" class="right-arrow"></button>
+                            <button type="submit" class="form-button">Get in Touch <img src="./icons/right-arrow.svg" alt="Right Arrow" class="right-arrow"></button>
                         </div>
                     </form>
                 </div>
@@ -185,7 +347,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="footer-bottom">
+                     <div class="footer-bottom">
                         <div class="footer-colume">
                             <div class="footer-links-title-wrapper">
                                 <h3 class="footer-links-title">Solutions</h3>
