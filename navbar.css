@@ -212,7 +212,7 @@
         }
 
         .main-container-big {
-            max-width: 1400px;
+            max-width: 95%;
             margin: 0 auto;
         }
 
@@ -840,6 +840,7 @@
   gap: 6.5rem;
   width: 100%;
   margin-bottom: 3.12rem;
+  justify-content: center;
 }
 .footer-colume {
   display: flex;
@@ -1317,6 +1318,7 @@
 
 .nav-links {
   cursor: pointer;
+  z-index: 9999;
 }
 
 .nav-item-dropdown > .nav-links {
