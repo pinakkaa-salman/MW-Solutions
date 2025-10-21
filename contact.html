@@ -112,7 +112,7 @@
                     </div>
                     <div class="contact-us-form-wrapper">
                         <img src="./contact/images/contact-bg.png" alt="Contact Background" class="contact-us-image">
-                        <form action="" class="contact-us-form">
+                        <form class="contact-us-form">
                             <label for="name">Name</label>
                             <input type="text" id="name" name="name" placeholder="" required />
 
@@ -128,6 +128,8 @@
                             <button type="submit" class="submit-btn">
                                 SEND MESSAGE <img src="./icons/right-arrow.svg" alt="right arrow" class="submit-right-arrow">
                             </button>
+                            
+                            <div class="contact-us-form-note" style="display:none; margin-top: 15px;"></div>
                         </form>
                     </div>
                 </div>
@@ -258,5 +260,84 @@
         </footer>
     </main>
     <script src="./script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+      function submitContactUsForm(formSelector, buttonSelector, noteSelector) {
+        $(formSelector).on('submit', function (event) {
+          event.preventDefault();
+          event.stopPropagation();
+
+          // Get the button text content (excluding the img)
+          var $button = $(buttonSelector);
+          var $buttonText = $button.contents().filter(function() {
+            return this.nodeType === 3; // Text node
+          });
+          var originalText = $buttonText.text().trim();
+          
+          // Disable button and show loading state
+          $button.addClass('loading');
+          $buttonText[0].textContent = " Please Wait... ";
+          $button.attr("disabled", true);
+
+          // Gather form data
+          var formData = {
+            name: $(formSelector + ' [name="name"]').val(),
+            email: $(formSelector + ' [name="email"]').val(),
+            industry: $(formSelector + ' [name="industry"]').val(),
+            message: $(formSelector + ' [name="message"]').val(),
+          };
+
+          $.ajax({
+            type: "POST",
+            url: "https://emailjsfuntions-428145106157.asia-south1.run.app/mw-contact-us",
+            data: JSON.stringify(formData),
+            contentType: "application/json",
+            success: function (msg) {
+              $button.removeClass('loading');
+              $buttonText[0].textContent = " " + originalText + " ";
+              $button.removeAttr("disabled");
+              var result;
+
+              if (msg === "Email sent successfully") {
+                result =
+                  '<p style="color:green; font-weight: 600; font-size: 16px; width:100%">Email Sent Successfully!</p>';
+                setTimeout(function() {
+                  $(noteSelector).fadeOut();
+                }, 5000);
+                $(formSelector)[0].reset();
+              } else {
+                result =
+                  '<p style="color:red; font-weight: 600; font-size: 16px; width:100%">' +
+                  msg +
+                  "</p>";
+              }
+
+              $(noteSelector).html(result).show();
+            },
+            error: function () {
+              $button.removeClass('loading');
+              $buttonText[0].textContent = " " + originalText + " ";
+              $button.removeAttr("disabled");
+              $(noteSelector)
+                .html(
+                  '<p style="color:red; font-weight: 600; font-size: 16px; width:100%">Error sending email!</p>'
+                )
+                .show();
+            },
+          });
+
+          return false;
+        });
+      }
+
+      $(document).ready(function () {
+        // Contact Us form
+        submitContactUsForm(
+          ".contact-us-form",
+          ".contact-us-form button[type='submit']",
+          ".contact-us-form-note"
+        );
+      });
+    </script>
 </body>
 </html>

@@ -527,12 +527,14 @@
                         <div class="careers-submit-wrapper">
                             <button type="submit" class="careers-submit-button">
                                 Submit Application
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="submit-arrow-svg">
                                     <line x1="5" y1="12" x2="19" y2="12"></line>
                                     <polyline points="12 5 19 12 12 19"></polyline>
                                 </svg>
                             </button>
                         </div>
+                        
+                        <div class="careers-form-note" style="display:none; margin-top: 15px;"></div>
                     </form>
                 </div>
             </div>
@@ -623,5 +625,86 @@
         </footer>
     </main>
     <script src="./script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+      function submitCareersForm(formSelector, buttonSelector, noteSelector) {
+        $(formSelector).on('submit', function (event) {
+          event.preventDefault();
+          event.stopPropagation();
+
+          // Get the button text content (excluding the svg)
+          var $button = $(buttonSelector);
+          var $buttonText = $button.contents().filter(function() {
+            return this.nodeType === 3; // Text node
+          });
+          var originalText = $buttonText.text().trim();
+          
+          // Disable button and show loading state
+          $button.addClass('loading');
+          $buttonText[0].textContent = " Please Wait... ";
+          $button.attr("disabled", true);
+
+          // Gather form data
+          var formData = {
+            name: $(formSelector + ' [name="name"]').val(),
+            email: $(formSelector + ' [name="email"]').val(),
+            countryCode: $(formSelector + ' [name="country-code"]').val(),
+            phone: $(formSelector + ' [name="phone"]').val(),
+            position: $(formSelector + ' [name="position"]').val(),
+            message: $(formSelector + ' [name="message"]').val(),
+          };
+
+          $.ajax({
+            type: "POST",
+            url: "https://emailjsfuntions-428145106157.asia-south1.run.app/mw-careers",
+            data: JSON.stringify(formData),
+            contentType: "application/json",
+            success: function (msg) {
+              $button.removeClass('loading');
+              $buttonText[0].textContent = " " + originalText + " ";
+              $button.removeAttr("disabled");
+              var result;
+
+              if (msg === "Email sent successfully") {
+                result =
+                  '<p style="color:green; font-weight: 600; font-size: 16px; width:100%">Application Submitted Successfully!</p>';
+                setTimeout(function() {
+                  $(noteSelector).fadeOut();
+                }, 5000);
+                $(formSelector)[0].reset();
+              } else {
+                result =
+                  '<p style="color:red; font-weight: 600; font-size: 16px; width:100%">' +
+                  msg +
+                  "</p>";
+              }
+
+              $(noteSelector).html(result).show();
+            },
+            error: function () {
+              $button.removeClass('loading');
+              $buttonText[0].textContent = " " + originalText + " ";
+              $button.removeAttr("disabled");
+              $(noteSelector)
+                .html(
+                  '<p style="color:red; font-weight: 600; font-size: 16px; width:100%">Error submitting application!</p>'
+                )
+                .show();
+            },
+          });
+
+          return false;
+        });
+      }
+
+      $(document).ready(function () {
+        // Careers form
+        submitCareersForm(
+          ".careers-form-container",
+          ".careers-form-container button[type='submit']",
+          ".careers-form-note"
+        );
+      });
+    </script>
 </body>
 </html>

@@ -293,8 +293,9 @@ letter-spacing: 0.04rem;
 .form-input {
   display: flex;
   width: 38.125rem;
+  max-width: 100%;
   height: 4rem;
-  padding: 1.25rem 32.875rem 1.3125rem 0.5625rem;
+  /* padding: 1.25rem 32.875rem 1.3125rem 0.5625rem; */
   align-items: center;
   flex-shrink: 0;
   border-radius: 1rem;
@@ -302,21 +303,21 @@ letter-spacing: 0.04rem;
   backdrop-filter: blur(25px);
   border: none;
   color: rgba(255, 255, 255, 0.6);
-  text-align: center;
+  text-align: left;
   font-feature-settings: "liga" off, "clig" off;
-
-  /* Main Text/P1 400 */
   font-family: Poppins;
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.4375rem; /* 143.75% */
+  line-height: 1.4375rem;
+  padding-left: 1rem;
 }
 .form-input-big {
   display: flex;
   width: 38.125rem;
+  max-width: 100%;
   height: 10rem;
-  padding: 1rem 29.8125rem 7.5625rem 1.3125rem;
+  /* padding: 1rem 29.8125rem 7.5625rem 1.3125rem; */
   align-items: center;
   flex-shrink: 0;
   border-radius: 1rem;
@@ -324,15 +325,15 @@ letter-spacing: 0.04rem;
   backdrop-filter: blur(25px);
   border: none;
   color: rgba(255, 255, 255, 0.6);
-  text-align: center;
+  text-align: left;
   font-feature-settings: "liga" off, "clig" off;
-
-  /* Main Text/P1 400 */
   font-family: Poppins;
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.4375rem; /* 143.75% */
+  line-height: 1.4375rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
 }
 .form-button-wrapper {
   width: 100%;
@@ -975,4 +976,47 @@ letter-spacing: 0.04rem;
     font-size: 0.8125rem;
     line-height: 1.35rem;
   }
+}
+/* Loading animation for careers form button */
+.careers-submit-button.loading {
+    position: relative;
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+.careers-submit-button.loading::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    right: 20px;
+    margin-top: -8px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spinner 0.6s linear infinite;
+}
+
+@keyframes spinner {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Hide arrow svg during loading */
+.careers-submit-button.loading .submit-arrow-svg {
+    opacity: 0;
+}
+
+/* Careers form note styling */
+.careers-form-note {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.careers-form-note p {
+    margin: 0;
+    padding: 10px;
+    border-radius: 4px;
 }

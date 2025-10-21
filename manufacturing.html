@@ -150,13 +150,14 @@
                     <div class="contact-section-content-wrapper">
                         <h1 class="contact-section-title">Secure Your Power Infrastructure with Expert Guidance</h1>
                     </div>
-                    <form action="" class="contact-section-form">
-                        <input type="text" placeholder="Name" class="form-input">
-                        <input type="email" placeholder="Email" class="form-input">
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Message" class="form-input-big"></textarea>
+                    <form class="contact-section-form">
+                        <input type="text" name="name" placeholder="Name" class="form-input" required>
+                        <input type="email" name="email" placeholder="Email" class="form-input" required>
+                        <textarea name="message" id="" cols="30" rows="10" placeholder="Message" class="form-input-big" required></textarea>
                         <div class="form-button-wrapper">
-                            <button type="submit" class="form-button">Request Consultation <img src="./icons/right-arrow.svg" alt="Right Arrow" class="right-arrow"></button>
+                            <button type="submit" class="form-button">Request a Platform Demo <img src="./icons/right-arrow.svg" alt="Right Arrow" class="right-arrow"></button>
                         </div>
+                        <div class="contact-form-note" style="display:none; margin-top: 15px;"></div>
                     </form>
                 </div>
             </div>
@@ -227,7 +228,7 @@
                                 <div class="footer-line"></div>
                             </div>
                             <div class="footer-links-wrapper">
-                                <a href="./about-us/" class="footer-links">About Us</a>
+                                <a href="./about.html" class="footer-links">About Us</a>
                                 <a href="./leadership-team.html" class="footer-links">Leadership Team</a>
                                 <a href="./careers.html" class="footer-links">Careers</a>
                                 <a href="./contact.html" class="footer-links">Contact</a>
@@ -246,6 +247,9 @@
             </div>
         </footer>
     </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./email.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./script.js"></script>
 </body>
 </html>

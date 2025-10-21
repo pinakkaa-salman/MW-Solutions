@@ -1355,3 +1355,50 @@
 .footer-copyright-link:hover{
   color: #a7a7a781;
 }
+
+
+
+
+/* Loading animation for form button */
+.form-button.loading {
+    position: relative;
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+.form-button.loading::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    right: 20px;
+    margin-top: -8px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spinner 0.6s linear infinite;
+}
+
+@keyframes spinner {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Hide arrow icon during loading */
+.form-button.loading .right-arrow {
+    opacity: 0;
+}
+
+/* Form note styling */
+.contact-form-note {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.contact-form-note p {
+    margin: 0;
+    padding: 10px;
+    border-radius: 4px;
+}
