@@ -19,7 +19,6 @@ body {
   font-weight: 400;
   line-height: 120%; /* 3.75rem */
   letter-spacing: 0.025rem;
-  width: 67.5rem;
 }
 .section-para {
   color: var(--White, #fff);
@@ -30,7 +29,6 @@ body {
   font-weight: 100;
   line-height: 2.6875rem; /* 165.385% */
   text-transform: capitalize;
-  width: 62.9375rem;
 }
 .section-subtitle {
   color: var(--Accent-1, #3ed5dd);
@@ -83,10 +81,10 @@ body {
 }
 .mission-vision-content-wrapper {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  gap: 2.19rem;
+  gap: 5rem;
 }
 
 .mission-vision-btn-wrapper {
@@ -1002,4 +1000,15 @@ body {
   .blog-card-title {
     font-size: 1.125rem;
   }
+}
+
+
+.mission-vission-flex{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 66%;
+}
+.mission-title, .mission-para{
+  text-align: left;
 }
