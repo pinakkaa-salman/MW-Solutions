@@ -1435,3 +1435,9 @@
 .left{
   text-align: left;
 }
+
+
+.blog-cards {
+  text-decoration: none !important;
+  color: inherit !important;
+}
