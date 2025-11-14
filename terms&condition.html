@@ -3,15 +3,212 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MW Solutions - Electrical Power Providers</title>
-    <link rel="stylesheet" href="./industry.css">
+    <title>MW Solutions About Us</title>
+    <link rel="stylesheet" href="./industries/style.css">
     <link rel="stylesheet" href="./navbar.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <style>
+        /* * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        } */
 
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: #171717;
+            color: #fff;
+            /* padding: 4rem 2rem; */
+        }
+
+        .terms-container {
+            max-width: 75rem;
+            margin: 0 auto;
+        }
+
+        .terms-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .terms-header h1 {
+            font-size: 2.5rem;
+            font-weight: 400;
+            margin-bottom: 1rem;
+            color: #3ed5dd;
+        }
+
+        .terms-header p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.8);
+            max-width: 50rem;
+            margin: 0 auto;
+        }
+
+        .terms-content {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-top: 7rem;
+        }
+
+        .term-box {
+            /* background: rgba(50, 51, 53, 0.3);
+            border: 1px solid rgba(62, 213, 221, 0.2);
+            border-radius: 0.5rem; */
+            padding: 1rem;
+        }
+
+        .term-box h2 {
+            font-size: 1.25rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+            color: #fff;
+            font-family: Roboto;
+        }
+
+        .term-box p {
+            font-size: 0.9375rem;
+            line-height: 1.7;
+            color: rgba(255, 255, 255, 0.85);
+            margin-bottom: 0.75rem;
+            font-family: Roboto;
+        }
+        .term-box p strong{
+            font-size: 0.9375rem;
+            line-height: 1.7;
+            color: rgba(255, 255, 255, 0.85);
+            margin-bottom: 0.75rem;
+            font-family: Roboto;
+        }
+
+        .term-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .term-box ul {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 0.75rem;
+            font-family: Roboto;
+        }
+
+        .term-box li {
+            padding-left: 1.25rem;
+            position: relative;
+            margin-bottom: 0.5rem;
+            font-size: 0.9375rem;
+            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.85);
+            font-family: Roboto;
+        }
+
+        .term-box li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #3ed5dd;
+        }
+
+        .contact-box {
+            background: rgba(62, 213, 221, 0.1);
+            border: 1px solid #3ed5dd;
+            border-radius: 0.5rem;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 1.5rem;
+        }
+
+        .contact-box h2 {
+            font-size: 1.25rem;
+            color: #3ed5dd;
+            margin-bottom: 0.75rem;
+        }
+
+        .contact-box p {
+            font-size: 0.9375rem;
+            margin-bottom: 1rem;
+            color: rgba(255, 255, 255, 0.85);
+        }
+
+        .contact-box a {
+            color: #3ed5dd;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-box a:hover {
+            color: #9ee44d;
+        }
+
+        /* Tablet Responsive */
+        @media (max-width: 1024px) {
+            body {
+                padding: 3rem 1.5rem;
+            }
+
+            .terms-header h1 {
+                font-size: 2rem;
+            }
+
+            .term-box {
+                padding: 1.5rem;
+            }
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 767px) {
+            body {
+                padding: 2rem 1rem;
+            }
+
+            .terms-header {
+                margin-bottom: 2rem;
+            }
+
+            .terms-header h1 {
+                font-size: 1.75rem;
+            }
+
+            .terms-header p {
+                font-size: 0.9375rem;
+            }
+
+            .terms-content {
+                gap: 1rem;
+            }
+
+            .term-box {
+                padding: 1.25rem;
+            }
+
+            .term-box h2 {
+                font-size: 1.125rem;
+            }
+
+            .term-box p,
+            .term-box li {
+                font-size: 0.875rem;
+            }
+
+            .contact-box {
+                padding: 1.5rem;
+            }
+
+            .contact-box h2 {
+                font-size: 1.125rem;
+            }
+
+            .contact-box p {
+                font-size: 0.875rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <main>
@@ -104,58 +301,102 @@
         </nav>
         <!-- Mobile Overlay -->
         <div class="mobile-overlay"></div>
-
-        <section class="service-section">
+        <section class="industries-section">
             <div class="main-container">
-                <div class="service-section-wrapper">
-                   <div class="service-section-content-wrapper">
-                        <p class="service-section-subtitle">CHEMICAL</p>
-                        <h1 class="service-section-title">
-                            Securing <span>Chemical Production </span> and Managing OT Cybersecurity Challenges
-                        </h1>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <section class="electrical-power-overview-section">
-            <div class="main-container">
-                <div class="electrical-power-overview-wrapper">
-                    <div class="electrical-power-image-wrapper">
-                        <img src="./images/Chemical.png" alt="Electrical Power Infrastructure" class="electrical-power-image">
-                    </div>
-                    <div class="electrical-power-content-wrapper">
-                        <h1 class="electrical-power-title">Chemical</h1>
-                        <p class="electrical-power-para">MW Solutions offers deep expertise in the chemical production industry, focusing on safeguarding functional safety in hazardous environments, securing intellectual property, and ensuring reliable production within chemical manufacturing facilities.</p>
-                        <h2 class="electrical-power-subtitle">Securing Chemical Production: Managing OT Cybersecurity and Compliance Challenges</h2>
-                        <p class="electrical-power-para">Chemical manufacturing faces unique security challenges due to its heavy regulation and the integration of new technologies like the Industrial Internet of Things (IIoT), which introduces connected devices and sensors into hazardous environments. It’s crucial to address the potential functional safety, environmental, and financial impacts of OT cybersecurity breaches.</p>
+                <div class="industries-section-wrapper">
+                    <div class="industries-section-content-wrapper">
+                        <p class="industries-section-subtitle">Terms and Conditions</p>
+                        <h1 class="industries-section-title">These <span>Terms and Conditions </span>  govern your access to and use of MW Solutions' website and services. </h1>
                     </div>
                 </div>
             </div>
         </section>
-
-        <section class="electrical-power-content-section">
-            <div class="main-container">
-                <div class="electrical-power-content-section-wrapper">
-                    <div class="content-block">
-                        <p class="content-block-para">MW Solutions supports organizations in enhancing their OT cybersecurity maturity, whether leveraging the commercial benefits of connected IIoT technology or protecting existing legacy systems. We focus on implementing robust industrial cybersecurity controls, workforce training, and governance to safeguard critical OT systems and valuable intellectual property.</p>
-                    </div>
-                    <div class="content-block">
-                        <p class="content-block-para">The chemicals sector must navigate stringent regulations, including Good Manufacturing Practice and the NIS Directive in various European countries. We help translate these complex standards into a tailored cybersecurity framework suitable for your operational environment.</p>
-                    </div>
-                    <!-- <div class="content-block">
-                        <p class="cta-text"><strong>Contact Us</strong> to learn how Applied Risk can strengthen the OT cybersecurity posture of your power infrastructure through a comprehensive strategy covering prevention, detection, response, and recovery.</p>
-                    </div> -->
+        <div class="terms-container">
+            <!-- <div class="terms-header">
+                <h1>Terms & Conditions</h1>
+                <p>These Terms and Conditions govern your access to and use of MW Solutions' website and services. By using our services, you agree to comply with these Terms.</p>
+            </div> -->
+    
+            <div class="terms-content">
+                <div class="term-box">
+                    <h2>1. Overview of Services</h2>
+                    <p>MW Solutions provides specialized cybersecurity consulting and solutions for operational technology (OT) across various industries, including mining, chemical, and manufacturing. Our services are designed to enhance the security posture of your organization, ensuring resilience against cyber threats and compliance with industry standards.</p>
+                </div>
+    
+                <div class="term-box">
+                    <h2>2. Intellectual Property Rights</h2>
+                    <p>All content and materials on the MW Solutions website, including text, graphics, logos, and software, are the exclusive property of MW Solutions. Unauthorized use, reproduction, or distribution is strictly prohibited and may result in legal action.</p>
+                </div>
+    
+                <div class="term-box">
+                    <h2>3. User Responsibilities</h2>
+                    <p>By using our services, you agree to:</p>
+                    <ul>
+                        <li>Provide accurate and truthful information during registration and interactions</li>
+                        <li>Use our services in compliance with applicable laws, regulations, and industry standards</li>
+                        <li>Avoid any conduct that may harm, disrupt, or negatively affect our website or services</li>
+                    </ul>
+                </div>
+    
+                <div class="term-box">
+                    <h2>4. Service Availability</h2>
+                    <p>While MW Solutions strives to provide reliable and uninterrupted services, we do not guarantee continuous access. We reserve the right to modify or discontinue any aspect of our services without prior notice for maintenance or legal reasons.</p>
+                </div>
+    
+                <div class="term-box">
+                    <h2>5. Commitment to Quality</h2>
+                    <p>MW Solutions is committed to delivering high-quality services and solutions. We adhere to rigorous methodologies and best practices to ensure that our cybersecurity measures are effective and up-to-date with industry developments.</p>
+                </div>
+    
+                <div class="term-box">
+                    <h2>6. Limitation of Liability</h2>
+                    <p>MW Solutions will not be liable for any indirect, incidental, or consequential damages arising from your use of our services. Our total liability is limited to the amount you paid for the services provided. We also do not guarantee that our services will meet all your specific needs or expectations.</p>
+                </div>
+    
+                <div class="term-box">
+                    <h2>7. Links to Third-Party Sites</h2>
+                    <p>Our website may contain links to third-party websites. MW Solutions is not responsible for the content or privacy practices of these external sites. We encourage users to review the terms and policies of any third-party sites they visit.</p>
+                </div>
+    
+                <div class="term-box">
+                    <h2>8. Termination of Access</h2>
+                    <p>We reserve the right to terminate or suspend your access to our services at our discretion, especially in cases of violations of these Terms or engagement in any unlawful conduct.</p>
+                </div>
+    
+                <div class="term-box">
+                    <h2>9. Confidentiality and Data Security</h2>
+                    <p>MW Solutions prioritizes the confidentiality of your information. We employ industry-standard security measures to protect sensitive data from unauthorized access or breaches. Our team is trained to handle your information with the utmost care and discretion.</p>
+                </div>
+    
+                <div class="term-box">
+                    <h2>10. Governing Law</h2>
+                    <p>These Terms are governed by the laws of Istanbul, Turkey. Any disputes arising from these Terms or your use of our services will be resolved in the courts of Istanbul, Turkey.</p>
+                </div>
+    
+                <div class="term-box">
+                    <h2>11. Changes to Terms</h2>
+                    <p>MW Solutions may update these Terms and Conditions periodically. Any changes will be effective immediately upon posting on this page. We encourage users to review these Terms regularly to stay informed of any modifications.</p>
+                </div>
+    
+                <div class="term-box">
+                    <h2>12. Contact Information</h2>
+                    <p>For inquiries or concerns regarding these Terms, please contact us at <a href="mailto:bd@mwsolutions-ics.com" style="color: #3ed5dd; text-decoration: none;">bd@mwsolutions-ics.com</a>. We value your feedback and are here to assist you.</p>
+                </div>
+    
+                <div class="contact-box">
+                    <h2>Have Questions?</h2>
+                    <p>If you need clarification on any of these terms or have specific concerns, our team is ready to help.</p>
+                    <a href="mailto:bd@mwsolutions-ics.com">bd@mwsolutions-ics.com</a>
                 </div>
             </div>
-        </section>
-
+        </div>
+        
+        
         <section class="contact-section">
             <div class="main-container">
                 <div class="contact-section-wrapper">
                     <div class="contact-section-content-wrapper">
-                        <h1 class="contact-section-title">Secure Your Power Infrastructure with Expert Guidance</h1>
+                        <h1 class="contact-section-title">Get in Touch with our industrial security specialists</h1>
                     </div>
                     <form class="contact-section-form">
                         <input type="text" name="name" placeholder="Name" class="form-input" required>
@@ -169,7 +410,6 @@
                 </div>
             </div>
         </section>
-
         <footer class="footer-section">
             <div class="main-container-big">
                 <div class="footer-section-wrapper">

@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ - MW Solutions</title>
+    <title>MW Solutions - Terms & Conditions</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -18,504 +18,262 @@
             font-family: 'Roboto', sans-serif;
             background: #171717;
             color: #fff;
+            padding: 4rem 2rem;
         }
 
-        .main-container {
-            max-width: 1440px;
+        .terms-container {
+            max-width: 75rem;
             margin: 0 auto;
-            padding: 0 4rem;
         }
 
-        /* Hero Section */
-        .faq-hero-section {
-            padding: 6rem 0 4rem 0;
-            background: #171717;
+        .terms-header {
             text-align: center;
+            margin-bottom: 3rem;
         }
 
-        .faq-hero-subtitle {
-            color: #3ed5dd;
-            font-size: 1.3125rem;
-            font-weight: 300;
-            letter-spacing: 0.105rem;
-            margin-bottom: 1rem;
-        }
-
-        .faq-hero-title {
-            color: #fff;
-            font-size: 3.125rem;
+        .terms-header h1 {
+            font-size: 2.5rem;
             font-weight: 400;
-            line-height: 120%;
-            letter-spacing: 0.025rem;
+            margin-bottom: 1rem;
+            color: #3ed5dd;
         }
 
-        /* FAQ Content Section */
-        .faq-content-section {
-            padding: 4rem 0 6rem 0;
-            background: #171717;
+        .terms-header p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.8);
+            max-width: 50rem;
+            margin: 0 auto;
         }
 
-        .faq-row {
+        .terms-content {
             display: flex;
-            align-items: center;
-            gap: 4rem;
-            margin-bottom: 5rem;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-top: 7rem;
         }
 
-        .faq-row:last-child {
+        .term-box {
+            /* background: rgba(50, 51, 53, 0.3);
+            border: 1px solid rgba(62, 213, 221, 0.2);
+            border-radius: 0.5rem; */
+            padding: 1rem;
+        }
+
+        .term-box h2 {
+            font-size: 1.25rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        .term-box p {
+            font-size: 0.9375rem;
+            line-height: 1.7;
+            color: rgba(255, 255, 255, 0.85);
+            margin-bottom: 0.75rem;
+        }
+
+        .term-box p:last-child {
             margin-bottom: 0;
         }
 
-        .faq-row.reverse {
-            flex-direction: row-reverse;
+        .term-box ul {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 0.75rem;
         }
 
-        .faq-image-wrapper {
-            flex: 1;
-            max-width: 500px;
-        }
-
-        .faq-image {
-            width: 100%;
-            height: auto;
-            border-radius: 1rem;
-            object-fit: cover;
-        }
-
-        .faq-questions-wrapper {
-            flex: 1;
-        }
-
-        .faq-section-title {
-            color: #fff;
-            font-size: 2.5rem;
-            font-weight: 400;
-            margin-bottom: 2rem;
-            line-height: 120%;
-        }
-
-        .faq-item {
-            margin-bottom: 1rem;
-            border-radius: 0.5rem;
-            background: rgba(170, 170, 170, 0.06);
-            backdrop-filter: blur(25px);
-            overflow: hidden;
-            transition: all 0.3s ease;
-        }
-
-        .faq-question {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1.5rem 1.5rem;
-            cursor: pointer;
-            user-select: none;
-            transition: background 0.3s ease;
-        }
-
-        .faq-question:hover {
-            background: rgba(170, 170, 170, 0.1);
-        }
-
-        .faq-question-text {
-            color: #fff;
-            font-size: 1.125rem;
-            font-weight: 500;
-            letter-spacing: 0.02rem;
-            flex: 1;
-            padding-right: 1rem;
-        }
-
-        .faq-question-number {
-            color: #3ed5dd;
-            font-size: 1rem;
-            font-weight: 500;
-            margin-right: 1rem;
-            min-width: 35px;
-        }
-
-        .faq-icon {
-            width: 24px;
-            height: 24px;
-            transition: transform 0.3s ease;
-            flex-shrink: 0;
-        }
-
-        .faq-icon svg {
-            width: 100%;
-            height: 100%;
-        }
-
-        .faq-item.active .faq-icon {
-            transform: rotate(180deg);
-        }
-
-        .faq-answer {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease, padding 0.3s ease;
-        }
-
-        .faq-item.active .faq-answer {
-            max-height: 500px;
-            padding: 0 1.5rem 1.5rem 1.5rem;
-        }
-
-        .faq-answer-text {
+        .term-box li {
+            padding-left: 1.25rem;
+            position: relative;
+            margin-bottom: 0.5rem;
+            font-size: 0.9375rem;
+            line-height: 1.6;
             color: rgba(255, 255, 255, 0.85);
-            font-size: 1rem;
-            font-weight: 300;
-            line-height: 1.75rem;
-            letter-spacing: 0.04rem;
-            padding-left: 50px;
+        }
+
+        .term-box li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #3ed5dd;
+        }
+
+        .contact-box {
+            background: rgba(62, 213, 221, 0.1);
+            border: 1px solid #3ed5dd;
+            border-radius: 0.5rem;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 1.5rem;
+        }
+
+        .contact-box h2 {
+            font-size: 1.25rem;
+            color: #3ed5dd;
+            margin-bottom: 0.75rem;
+        }
+
+        .contact-box p {
+            font-size: 0.9375rem;
+            margin-bottom: 1rem;
+            color: rgba(255, 255, 255, 0.85);
+        }
+
+        .contact-box a {
+            color: #3ed5dd;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-box a:hover {
+            color: #9ee44d;
         }
 
         /* Tablet Responsive */
         @media (max-width: 1024px) {
-            .main-container {
-                padding: 0 2rem;
+            body {
+                padding: 3rem 1.5rem;
             }
 
-            .faq-hero-section {
-                padding: 5rem 0 3rem 0;
-            }
-
-            .faq-hero-title {
-                font-size: 2.5rem;
-            }
-
-            .faq-hero-subtitle {
-                font-size: 1.125rem;
-            }
-
-            .faq-content-section {
-                padding: 3rem 0 5rem 0;
-            }
-
-            .faq-row {
-                gap: 3rem;
-                margin-bottom: 4rem;
-            }
-
-            .faq-section-title {
+            .terms-header h1 {
                 font-size: 2rem;
-                margin-bottom: 1.5rem;
             }
 
-            .faq-question-text {
-                font-size: 1rem;
-            }
-
-            .faq-answer-text {
-                font-size: 0.9375rem;
-                line-height: 1.625rem;
-                padding-left: 40px;
+            .term-box {
+                padding: 1.5rem;
             }
         }
 
         /* Mobile Responsive */
         @media (max-width: 767px) {
-            .main-container {
-                padding: 0 1rem;
+            body {
+                padding: 2rem 1rem;
             }
 
-            .faq-hero-section {
-                padding: 4rem 0 2.5rem 0;
+            .terms-header {
+                margin-bottom: 2rem;
             }
 
-            .faq-hero-subtitle {
-                font-size: 0.875rem;
-            }
-
-            .faq-hero-title {
+            .terms-header h1 {
                 font-size: 1.75rem;
             }
 
-            .faq-content-section {
-                padding: 2.5rem 0 4rem 0;
-            }
-
-            .faq-row {
-                flex-direction: column !important;
-                gap: 2rem;
-                margin-bottom: 3rem;
-            }
-
-            .faq-image-wrapper {
-                max-width: 100%;
-            }
-
-            .faq-section-title {
-                font-size: 1.5rem;
-                margin-bottom: 1.25rem;
-            }
-
-            .faq-question {
-                padding: 1.25rem 1rem;
-            }
-
-            .faq-question-text {
+            .terms-header p {
                 font-size: 0.9375rem;
             }
 
-            .faq-question-number {
-                font-size: 0.875rem;
-                min-width: 30px;
-                margin-right: 0.75rem;
+            .terms-content {
+                gap: 1rem;
             }
 
-            .faq-icon {
-                width: 20px;
-                height: 20px;
+            .term-box {
+                padding: 1.25rem;
             }
 
-            .faq-item.active .faq-answer {
-                padding: 0 1rem 1.25rem 1rem;
+            .term-box h2 {
+                font-size: 1.125rem;
             }
 
-            .faq-answer-text {
-                font-size: 0.875rem;
-                line-height: 1.5rem;
-                padding-left: 35px;
-            }
-        }
-
-        /* Extra Small Mobile */
-        @media (max-width: 480px) {
-            .main-container {
-                padding: 0 0.875rem;
-            }
-
-            .faq-hero-section {
-                padding: 3rem 0 2rem 0;
-            }
-
-            .faq-hero-subtitle {
-                font-size: 0.75rem;
-            }
-
-            .faq-hero-title {
-                font-size: 1.5rem;
-            }
-
-            .faq-content-section {
-                padding: 2rem 0 3rem 0;
-            }
-
-            .faq-row {
-                margin-bottom: 2.5rem;
-            }
-
-            .faq-section-title {
-                font-size: 1.25rem;
-            }
-
-            .faq-question {
-                padding: 1rem 0.875rem;
-            }
-
-            .faq-question-text {
+            .term-box p,
+            .term-box li {
                 font-size: 0.875rem;
             }
 
-            .faq-answer-text {
-                font-size: 0.8125rem;
-                line-height: 1.35rem;
-                padding-left: 30px;
+            .contact-box {
+                padding: 1.5rem;
+            }
+
+            .contact-box h2 {
+                font-size: 1.125rem;
+            }
+
+            .contact-box p {
+                font-size: 0.875rem;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Hero Section -->
-    <section class="faq-hero-section">
-        <div class="main-container">
-            <p class="faq-hero-subtitle">FAQ</p>
-            <h1 class="faq-hero-title">Some Q. & Answers</h1>
+    <div class="terms-container">
+        <div class="terms-header">
+            <h1>Terms & Conditions</h1>
+            <p>These Terms and Conditions govern your access to and use of MW Solutions' website and services. By using our services, you agree to comply with these Terms.</p>
         </div>
-    </section>
 
-    <!-- FAQ Content Section -->
-    <section class="faq-content-section">
-        <div class="main-container">
-            
-            <!-- First Row: Image Left, Questions Right -->
-            <div class="faq-row">
-                <div class="faq-image-wrapper">
-                    <img src="./images/Why MW.png" alt="MW Solutions" class="faq-image">
-                </div>
-                <div class="faq-questions-wrapper">
-                    <div class="faq-item">
-                        <div class="faq-question" onclick="toggleFaq(this)">
-                            <span class="faq-question-number">01.</span>
-                            <span class="faq-question-text">What industries does MW Solutions serve?</span>
-                            <div class="faq-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="#3ed5dd" stroke-width="2">
-                                    <polyline points="6 9 12 15 18 9"></polyline>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="faq-answer">
-                            <p class="faq-answer-text">MW Solutions specializes in serving a wide range of industries including Oil & Gas, Chemicals, Water and Wastewater management, Telecommunications, and Nuclear Facilities. Our expertise extends to various mission-critical infrastructure sectors globally.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <div class="faq-question" onclick="toggleFaq(this)">
-                            <span class="faq-question-number">02.</span>
-                            <span class="faq-question-text">What services does MW Solutions provide?</span>
-                            <div class="faq-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="#3ed5dd" stroke-width="2">
-                                    <polyline points="6 9 12 15 18 9"></polyline>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="faq-answer">
-                            <p class="faq-answer-text">We provide comprehensive OT Security Services, Industrial Control Systems implementation, Industry 4.0 solutions, IIOT integration, Digital Twins development, MES/SCADA systems, and IT/OT Convergence solutions. We also deliver complete project documentation from Concept through FEED, Project execution, and Operations.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <div class="faq-question" onclick="toggleFaq(this)">
-                            <span class="faq-question-number">03.</span>
-                            <span class="faq-question-text">How does MW Solutions ensure cybersecurity resilience?</span>
-                            <div class="faq-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="#3ed5dd" stroke-width="2">
-                                    <polyline points="6 9 12 15 18 9"></polyline>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="faq-answer">
-                            <p class="faq-answer-text">We follow industry-leading standards including ISA, NEC, IEEE, NIST, and NEMA to safeguard Industrial Control Systems. Our approach includes comprehensive risk assessments, implementing defense-in-depth strategies, and continuous monitoring to protect against evolving cyber threats.</p>
-                        </div>
-                    </div>
-                </div>
+        <div class="terms-content">
+            <div class="term-box">
+                <h2>1. Overview of Services</h2>
+                <p>MW Solutions provides specialized cybersecurity consulting and solutions for operational technology (OT) across various industries, including mining, chemical, and manufacturing. Our services are designed to enhance the security posture of your organization, ensuring resilience against cyber threats and compliance with industry standards.</p>
             </div>
 
-            <!-- Second Row: Questions Left, Image Right -->
-            <div class="faq-row reverse">
-                <div class="faq-image-wrapper">
-                    <img src="./images/Mission-MW.png" alt="MW Solutions Mission" class="faq-image">
-                </div>
-                <div class="faq-questions-wrapper">
-                    <div class="faq-item">
-                        <div class="faq-question" onclick="toggleFaq(this)">
-                            <span class="faq-question-number">04.</span>
-                            <span class="faq-question-text">What is MW Solutions' approach to project management?</span>
-                            <div class="faq-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="#3ed5dd" stroke-width="2">
-                                    <polyline points="6 9 12 15 18 9"></polyline>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="faq-answer">
-                            <p class="faq-answer-text">MW Solutions employs a structured approach to project management, covering all phases from initial conceptualization and Front-End Engineering Design (FEED) to project execution and ongoing operational support. Our goal is to deliver solutions that meet quality, timeline, and budget requirements.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <div class="faq-question" onclick="toggleFaq(this)">
-                            <span class="faq-question-number">05.</span>
-                            <span class="faq-question-text">How does MW Solutions handle industrial control system obsolescence?</span>
-                            <div class="faq-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="#3ed5dd" stroke-width="2">
-                                    <polyline points="6 9 12 15 18 9"></polyline>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="faq-answer">
-                            <p class="faq-answer-text">We stay current with the latest developments in Industry 4.0, IIOT, and emerging technologies. Our team proactively identifies obsolescence risks and develops migration strategies to ensure your systems remain secure, efficient, and compliant with modern standards.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <div class="faq-question" onclick="toggleFaq(this)">
-                            <span class="faq-question-number">06.</span>
-                            <span class="faq-question-text">What sets MW Solutions apart from competitors?</span>
-                            <div class="faq-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="#3ed5dd" stroke-width="2">
-                                    <polyline points="6 9 12 15 18 9"></polyline>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="faq-answer">
-                            <p class="faq-answer-text">With over 15 years of combined experience, strong relationships with world-leading clients, and adherence to multiple industry standards, we deliver comprehensive solutions tailored to mission-critical infrastructure. Our focus on making complex industrial knowledge easy to access and joyful to consume sets us apart.</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="term-box">
+                <h2>2. Intellectual Property Rights</h2>
+                <p>All content and materials on the MW Solutions website, including text, graphics, logos, and software, are the exclusive property of MW Solutions. Unauthorized use, reproduction, or distribution is strictly prohibited and may result in legal action.</p>
             </div>
 
-            <!-- Third Row: Image Left, Questions Right -->
-            <div class="faq-row">
-                <div class="faq-image-wrapper">
-                    <img src="./images/Vision-MW.png" alt="MW Solutions Vision" class="faq-image">
-                </div>
-                <div class="faq-questions-wrapper">
-                    <div class="faq-item">
-                        <div class="faq-question" onclick="toggleFaq(this)">
-                            <span class="faq-question-number">07.</span>
-                            <span class="faq-question-text">How can I get started with MW Solutions?</span>
-                            <div class="faq-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="#3ed5dd" stroke-width="2">
-                                    <polyline points="6 9 12 15 18 9"></polyline>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="faq-answer">
-                            <p class="faq-answer-text">Getting started is easy! Contact us through our website to request a platform demo or consultation. Our team will assess your specific needs and develop a customized solution that addresses your operational technology and cybersecurity requirements.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <div class="faq-question" onclick="toggleFaq(this)">
-                            <span class="faq-question-number">08.</span>
-                            <span class="faq-question-text">Does MW Solutions provide ongoing support and maintenance?</span>
-                            <div class="faq-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="#3ed5dd" stroke-width="2">
-                                    <polyline points="6 9 12 15 18 9"></polyline>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="faq-answer">
-                            <p class="faq-answer-text">Yes, we provide comprehensive ongoing support and maintenance services to ensure your systems continue to operate at peak performance. Our team is available for urgent incident response and routine maintenance to keep your critical infrastructure protected and operational.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <div class="faq-question" onclick="toggleFaq(this)">
-                            <span class="faq-question-number">09.</span>
-                            <span class="faq-question-text">What is MW Solutions' experience with international projects?</span>
-                            <div class="faq-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="#3ed5dd" stroke-width="2">
-                                    <polyline points="6 9 12 15 18 9"></polyline>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="faq-answer">
-                            <p class="faq-answer-text">MW Solutions has extensive experience delivering projects across various countries and diverse regulatory environments. We understand the unique challenges of international implementations and adapt our solutions to meet local standards while maintaining global best practices.</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="term-box">
+                <h2>3. User Responsibilities</h2>
+                <p>By using our services, you agree to:</p>
+                <ul>
+                    <li>Provide accurate and truthful information during registration and interactions</li>
+                    <li>Use our services in compliance with applicable laws, regulations, and industry standards</li>
+                    <li>Avoid any conduct that may harm, disrupt, or negatively affect our website or services</li>
+                </ul>
             </div>
 
+            <div class="term-box">
+                <h2>4. Service Availability</h2>
+                <p>While MW Solutions strives to provide reliable and uninterrupted services, we do not guarantee continuous access. We reserve the right to modify or discontinue any aspect of our services without prior notice for maintenance or legal reasons.</p>
+            </div>
+
+            <div class="term-box">
+                <h2>5. Commitment to Quality</h2>
+                <p>MW Solutions is committed to delivering high-quality services and solutions. We adhere to rigorous methodologies and best practices to ensure that our cybersecurity measures are effective and up-to-date with industry developments.</p>
+            </div>
+
+            <div class="term-box">
+                <h2>6. Limitation of Liability</h2>
+                <p>MW Solutions will not be liable for any indirect, incidental, or consequential damages arising from your use of our services. Our total liability is limited to the amount you paid for the services provided. We also do not guarantee that our services will meet all your specific needs or expectations.</p>
+            </div>
+
+            <div class="term-box">
+                <h2>7. Links to Third-Party Sites</h2>
+                <p>Our website may contain links to third-party websites. MW Solutions is not responsible for the content or privacy practices of these external sites. We encourage users to review the terms and policies of any third-party sites they visit.</p>
+            </div>
+
+            <div class="term-box">
+                <h2>8. Termination of Access</h2>
+                <p>We reserve the right to terminate or suspend your access to our services at our discretion, especially in cases of violations of these Terms or engagement in any unlawful conduct.</p>
+            </div>
+
+            <div class="term-box">
+                <h2>9. Confidentiality and Data Security</h2>
+                <p>MW Solutions prioritizes the confidentiality of your information. We employ industry-standard security measures to protect sensitive data from unauthorized access or breaches. Our team is trained to handle your information with the utmost care and discretion.</p>
+            </div>
+
+            <div class="term-box">
+                <h2>10. Governing Law</h2>
+                <p>These Terms are governed by the laws of Istanbul, Turkey. Any disputes arising from these Terms or your use of our services will be resolved in the courts of Istanbul, Turkey.</p>
+            </div>
+
+            <div class="term-box">
+                <h2>11. Changes to Terms</h2>
+                <p>MW Solutions may update these Terms and Conditions periodically. Any changes will be effective immediately upon posting on this page. We encourage users to review these Terms regularly to stay informed of any modifications.</p>
+            </div>
+
+            <div class="term-box">
+                <h2>12. Contact Information</h2>
+                <p>For inquiries or concerns regarding these Terms, please contact us at <a href="mailto:bd@mwsolutions-ics.com" style="color: #3ed5dd; text-decoration: none;">bd@mwsolutions-ics.com</a>. We value your feedback and are here to assist you.</p>
+            </div>
+
+            <div class="contact-box">
+                <h2>Have Questions?</h2>
+                <p>If you need clarification on any of these terms or have specific concerns, our team is ready to help.</p>
+                <a href="mailto:bd@mwsolutions-ics.com">bd@mwsolutions-ics.com</a>
+            </div>
         </div>
-    </section>
-
-    <script>
-        function toggleFaq(element) {
-            const faqItem = element.parentElement;
-            const isActive = faqItem.classList.contains('active');
-            
-            // Close all other FAQ items
-            document.querySelectorAll('.faq-item').forEach(item => {
-                item.classList.remove('active');
-            });
-            
-            // Toggle current item
-            if (!isActive) {
-                faqItem.classList.add('active');
-            }
-        }
-    </script>
+    </div>
 </body>
 </html>
