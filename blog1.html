@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MW Solutions About Us</title>
+    <link rel="stylesheet" href="./industries/style.css">
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <style>
+
+.blog-hero {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            padding: 80px 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .blog-hero-category {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .blog-hero-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .blog-hero-meta {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            font-size: 14px;
+            opacity: 0.9;
+            flex-wrap: wrap;
+        }
+
+        .blog-hero-meta span {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .blog-container {
+            max-width: 850px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .blog-intro {
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 50px;
+            font-family: "Inter", sans-serif;
+        }
+
+        .blog-section {
+            margin-bottom: 50px;
+        }
+
+        .blog-section-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 32px;
+            font-weight: 600;
+            color: #000;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #e5e7eb;
+        }
+
+        .blog-section-content {
+            font-size: 0.9rem;
+            line-height: 1.8;
+            color: #4b5563;
+            margin-bottom: 20px;
+            font-family: "Inter", sans-serif;
+        }
+
+        .blog-highlight-box {
+            margin: 30px 0;
+        }
+
+        .blog-highlight-box h3 {
+            font-family: 'Poppins', sans-serif;
+            color: #1e3a8a;
+            font-size: 20px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .blog-highlight-box p {
+            color: #4b5563;
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        .blog-list {
+            margin: 25px 0;
+            padding-left: 0;
+            list-style: none;
+        }
+
+        .blog-list li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 15px;
+            font-size: 17px;
+            color: #4b5563;
+            line-height: 1.7;
+        }
+
+        .blog-list li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #3b82f6;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .blog-quote {
+            color: #374151;
+            padding: 0;
+            margin: 40px 0;
+            font-size: 19px;
+            font-style: italic;
+            line-height: 1.7;
+        }
+
+        .blog-cta {
+            background: #f8fafc;
+            padding: 50px;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .blog-cta h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 32px;
+            margin-bottom: 20px;
+            font-weight: 600;
+            color: #1e3a8a;
+        }
+
+        .blog-cta p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #4b5563;
+        }
+
+        .blog-cta-button {
+            display: inline-block;
+            background: #1e3a8a;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: background 0.3s ease;
+        }
+
+        .blog-cta-button:hover {
+            background: #3b82f6;
+        }
+
+        @media (max-width: 768px) {
+            .blog-hero-title {
+                font-size: 32px;
+            }
+
+            .blog-section-title {
+                font-size: 26px;
+            }
+
+            .blog-intro {
+                font-size: 18px;
+                padding: 20px;
+            }
+
+            .blog-section-content {
+                font-size: 16px;
+            }
+
+            .blog-cta {
+                padding: 30px 20px;
+            }
+
+            .blog-cta h2 {
+                font-size: 26px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <nav class="navbar">
+            <div class="navbar-top">
+                <div class="main-container">
+                    <div class="navbar-top-wrapper">
+                        <img src="./icons/search-icon.svg" alt="" class="search-icon">
+                        <a href="" class="nav-top-links">Blog</a>
+                        <a href="" class="nav-top-links">Contact Us</a>
+                        <a href="" class="nav-top-links">Urgent Incident Response</a>
+                        <a href="" class="nav-top-links">Login</a>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-bottom">
+                <div class="main-container">
+                    <div class="navbar-bottom-wrapper">
+                        <img src="./icons/logo.svg" alt="" class="navbar-logo">
+                        
+                        <!-- Hamburger Button (will be visible on mobile/tablet only) -->
+                        <button class="hamburger" aria-label="Toggle menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                        
+                        <div class="nav-links-wrapper">
+                            <a href="./index.html" class="nav-links">Home</a>
+                            <!-- <a href="./about.html" class="nav-links">About</a> -->
+                            <div class="nav-item-dropdown">
+                                <a href="#" class="nav-links act">Why MW <img src="./icons/down-arrow.png" alt="" class="down-arrow"></a>
+                                <div class="dropdown-menu">
+                                    <a href="./Why-MW.html">Why MW</a>
+                                    <a href="./Certificates.html">Certification</a>
+                                    <a href="./blogs.html">Blogs</a>
+                                    <a href="./careers.html">Careers</a>
+                                </div>
+                            </div>
+                            <div class="nav-item-dropdown">
+                                <a href="#" class="nav-links act">Company <img src="./icons/down-arrow.png" alt="" class="down-arrow"></a>
+                                <div class="dropdown-menu">
+                                    <a href="./about.html">About Us</a>
+                                    <a href="./leadership-team.html">Leadership Team</a>
+                                </div>
+                            </div>
+                            <div class="nav-item-dropdown">
+                                <a href="#" class="nav-links act">Services and Solutions <img src="./icons/down-arrow.png" alt="" class="down-arrow"></a>
+                                <div class="dropdown-menu">
+                                    <a href="./ot-security.html">OT Security Services</a>
+                                    <a href="./labs.html">Labs</a>
+                                    <a href="./services.html">Services</a>
+                                </div>
+                            </div>
+                            <div class="nav-item-dropdown">
+                                <a href="#" class="nav-links act">Industries <img src="./icons/down-arrow.png" alt="" class="down-arrow"></a>
+                                <div class="dropdown-menu">
+                                    <a href="./oil-gas.html">Oil and Gas</a>
+                                    <a href="./water-waste.html">Water & Waste Water</a>
+                                    <a href="./electrical-power.html">Electrical Power Providers</a>
+                                    <a href="./mining.html">Mining</a>
+                                    <a href="./manufacturing.html">Manufacturing</a>
+                                    <a href="./chemical.html">Chemical</a>
+                                    <a href="./healthcare.html">Healthcare</a>
+                                    <a href="./automotive.html">Automotive</a>
+                                    <a href="./maritime.html">Maritime</a>
+                                    <a href="./defence.html">Defence</a>
+                                </div>
+                            </div>
+                             <!-- Resources Dropdown -->
+                            <div class="nav-item-dropdown">
+                                <a href="#" class="nav-links act">Resources <img src="./icons/down-arrow.png" alt="" class="down-arrow"></a>
+                                <div class="dropdown-menu">
+                                    <a href="./cybersecurite-guide.html">Cybersecurity Guide</a>
+                                </div>
+                            </div>
+                            <div class="nav-item-dropdown">
+                                <a href="#" class="nav-links act">Contact <img src="./icons/down-arrow.png" alt="" class="down-arrow"></a>
+                                <div class="dropdown-menu">
+                                    <a href="./contact.html">Contact Us</a>
+                                    <a href="./faq.html">FAQ</a>
+                                </div>
+                            </div>
+                            <!-- <a href="./contact.html" class="nav-links">Contact Us</a> -->
+                        </div>
+                        <a href="./contact.html" class="nav-btn">Request a Demo</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Mobile Overlay -->
+        <div class="mobile-overlay"></div>
+        <section class="industries-section">
+            <div class="main-container">
+                <div class="industries-section-wrapper">
+                    <div class="industries-section-content-wrapper">
+                        <p class="industries-section-subtitle">Nuclear Industry</p>
+                        <h1 class="industries-section-title">Securing Safety-Critical Systems in the Nuclear Industry: The Role of OT Cybersecurity</h1>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+
+
+        <!-- <section class="blog-hero">
+            <div class="blog-hero-category">Nuclear Industry</div>
+            <h1 class="blog-hero-title">Securing Safety-Critical Systems in the Nuclear Industry: The Role of OT Cybersecurity</h1>
+            <div class="blog-hero-meta">
+                <span>📅 November 14, 2025</span>
+                <span>⏱️ 5 min read</span>
+                <span>👤 MW Solutions</span>
+            </div>
+        </section> -->
+    
+        <!-- Hero Section -->
+    <!-- <section class="blog-hero">
+        <div class="blog-hero-category">Nuclear Industry</div>
+        <h1 class="blog-hero-title">Securing Safety-Critical Systems in the Nuclear Industry: The Role of OT Cybersecurity</h1>
+        <div class="blog-hero-meta">
+            <span>📅 November 14, 2025</span>
+            <span>⏱️ 5 min read</span>
+            <span>👤 MW Solutions</span>
+        </div>
+    </section> -->
+
+    <!-- Blog Content -->
+    <article class="blog-container">
+        <!-- Introduction -->
+        <div class="blog-intro">
+            Safety-critical systems within nuclear power plants are essential for ensuring safe and reliable operations. These systems not only prevent failures through design but also detect and control abnormal occurrences to maintain the plant's normal operating conditions. Over the years, the instrumentation and control (I&C) systems used in nuclear facilities have evolved significantly, transitioning from traditional hard-wired protections to modern digital systems.
+        </div>
+
+        <!-- Section 1 -->
+        <section class="blog-section">
+            <h2 class="blog-section-title">Evolution of I&C Systems</h2>
+            <p class="blog-section-content">
+                Earlier generations of nuclear power plants relied on hard-wired protection systems, analogue devices, and independent trip equipment for safety functions. While effective, these systems faced challenges such as obsolescence and difficulty in replacement as technology advanced. Today, digital and programmable I&C systems offer enhanced reliability, scalability, flexibility, and easier maintenance. However, with these advancements come new challenges, particularly in cybersecurity.
+            </p>
+        </section>
+
+        <!-- Section 2 -->
+        <section class="blog-section">
+            <h2 class="blog-section-title">Cybersecurity Risks in Digital I&C Systems</h2>
+            <p class="blog-section-content">
+                The shift towards digital I&C systems has introduced new cybersecurity risks. Instances like the Stuxnet attack on the Iranian uranium enrichment facility highlighted the vulnerabilities of programmable controllers to cyber threats. Malware attacks can compromise safety instrumented systems (SIS), potentially leading to severe consequences such as equipment damage or operational disruptions.
+            </p>
+        </section>
+
+        <!-- Section 3 -->
+        <section class="blog-section">
+            <h2 class="blog-section-title">Addressing Cybersecurity Challenges</h2>
+            <p class="blog-section-content">
+                To mitigate these risks, the nuclear industry must adhere to stringent cybersecurity standards and regulations. Organizations like the International Atomic Energy Agency (IAEA) and the International Electrotechnical Commission (IEC) have developed guidelines and standards specifically for protecting digital I&C systems in nuclear facilities. These frameworks emphasize risk management, security policies, and proactive measures to defend against cyber threats.
+            </p>
+        </section>
+
+        <!-- Section 4 -->
+        <section class="blog-section">
+            <h2 class="blog-section-title">MW Solutions' Approach to OT Cybersecurity</h2>
+            <p class="blog-section-content">
+                At MW Solutions, we specialize in OT cybersecurity for critical infrastructure sectors, including the nuclear industry. Our services encompass comprehensive cybersecurity risk assessments, asset discovery, threat modeling, and the implementation of secure-by-design principles. We assist clients in developing and implementing robust cybersecurity strategies tailored to their specific operational needs and regulatory requirements.
+            </p>
+        </section>
+
+        <!-- Call to Action -->
+        <!-- <div class="blog-cta">
+            <h2>Ready to Secure Your Critical Infrastructure?</h2>
+            <p>Contact our OT cybersecurity specialists to learn how we can help protect your nuclear facility against evolving cyber threats.</p>
+            <a href="#" class="blog-cta-button">Get in Touch →</a>
+        </div> -->
+    </article>
+
+
+
+
+
+        <section class="contact-section">
+            <div class="main-container">
+                <div class="contact-section-wrapper">
+                    <div class="contact-section-content-wrapper">
+                        <h1 class="contact-section-title">Get in Touch with our industrial security specialists</h1>
+                    </div>
+                    <form class="contact-section-form">
+                        <input type="text" name="name" placeholder="Name" class="form-input" required>
+                        <input type="email" name="email" placeholder="Email" class="form-input" required>
+                        <textarea name="message" id="" cols="30" rows="10" placeholder="Message" class="form-input-big" required></textarea>
+                        <div class="form-button-wrapper">
+                            <button type="submit" class="form-button">Request a Platform Demo <img src="./icons/right-arrow.svg" alt="Right Arrow" class="right-arrow"></button>
+                        </div>
+                        <div class="contact-form-note" style="display:none; margin-top: 15px;"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer class="footer-section">
+            <div class="main-container-big">
+                <div class="footer-section-wrapper">
+                    <div class="footer-logo-top">
+                        <div class="footer-logo-wrapper">
+                            <img src="./icons/Footer-logo.svg" alt="Footer Logo" class="footer-logo">
+                        </div>
+                        <div class="footer-icon-wrapper">
+                            <div class="social-media-icons"> 
+                                <img src="./icons/linkedIn.svg" alt="" class="footer-social-media-icons">
+                                <img src="./icons/x.svg" alt="" class="footer-social-media-icons">
+                                <img src="./icons/instagram.svg" alt="" class="footer-social-media-icons">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <div class="footer-colume">
+                            <div class="footer-links-title-wrapper">
+                                <h3 class="footer-links-title">Solutions</h3>
+                                <div class="footer-line"></div>
+                            </div>
+                            <div class="footer-links-wrapper">
+                                <a href="./ot-security.html" class="footer-links">OT Security Services</a>
+                                <a href="./labs.html" class="footer-links">Labs</a>
+                                <a href="./services.html" class="footer-links">Services</a>
+                            </div>
+                        </div>
+                        <div class="footer-colume">
+                            <div class="footer-links-title-wrapper">
+                                <h3 class="footer-links-title">Industries</h3>
+                                <div class="footer-line"></div>
+                            </div>
+                            <div class="footer-links-wrapper-dual">
+                                <div class="footer-links-wrapper">
+                                    <a href="./oil-gas.html" class="footer-links">Oil and Gas</a>
+                                    <a href="./water-waste.html" class="footer-links">Water & Waste Water</a>
+                                    <a href="./electrical-power.html" class="footer-links">Electrical Power Providers</a>
+                                    <a href="./mining.html" class="footer-links">Mining</a>
+                                    <a href="./manufacturing.html" class="footer-links">Manufacturing</a>
+                                </div>
+                                <div class="footer-links-wrapper">
+                                    <a href="./chemical.html" class="footer-links">Chemical</a>
+                                    <a href="./healthcare.html" class="footer-links">Healthcare</a>
+                                    <a href="./automotive.html" class="footer-links">Automotive</a>
+                                    <a href="./maritime.html" class="footer-links">Maritime</a>
+                                    <a href="./defence.html" class="footer-links">Defence</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-colume">
+                            <div class="footer-links-title-wrapper">
+                                <h3 class="footer-links-title">Resources</h3>
+                                <div class="footer-line"></div>
+                            </div>
+                            <div class="footer-links-wrapper">
+                                <a href="./cybersecurite-guide.html" class="footer-links">Cybersecurity Guide</a>
+                                <a href="./blogs.html" class="footer-links">Blogs</a>
+                            </div>
+                        </div>
+                        <div class="footer-colume">
+                            <div class="footer-links-title-wrapper">
+                                <h3 class="footer-links-title">Company</h3>
+                                <div class="footer-line"></div>
+                            </div>
+                            <div class="footer-links-wrapper">
+                                <a href="./about.html" class="footer-links">About Us</a>
+                                <a href="./leadership-team.html" class="footer-links">Leadership Team</a>
+                                <a href="./careers.html" class="footer-links">Careers</a>
+                                <a href="./contact.html" class="footer-links">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p class="footer-copyright-text">Copyright © 2025 MWSolutions Inc. Designed & Developed By <a href="www.pinakkaa.com" class="footer-copyright-link">Pinakkaa</a></p>
+                <div class="footer-copyright-right-links">
+                    <!-- <a href="" class="footer-copyright-link">Trust</a> -->
+                    <a href="./terms&condition.html" class="footer-copyright-link">Terms & Conditions</a>
+                    <a href="./privacy-policy.html" class="footer-copyright-link">Privacy Policy</a>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./email.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
