@@ -1441,3 +1441,32 @@
   text-decoration: none !important;
   color: inherit !important;
 }
+
+
+
+
+@media (max-width: 767px) {
+  .section-para-main{
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  .section-title-main{
+    font-size: 1.8rem;
+  }
+  .section-para-small{
+    line-height: 1.4;
+  }
+  .content-block{
+    flex-direction: column;
+  }
+  .vision-mission-image{
+    height: 200px;
+    width: 100%;
+  }
+  .content-block{
+    gap: 3rem;
+  }
+  .mission-vission-flex{
+    width: 100%;
+  }
+}

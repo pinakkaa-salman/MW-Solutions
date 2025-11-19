@@ -723,6 +723,10 @@ body {
   }
   .electrical-power-image{
     height: 400px;
+    width: 100%;
+  }
+  .electrical-power-content-section-wrapper{
+    padding: 0;
   }
 
 }

@@ -14,26 +14,49 @@
     <style>
         .about-section-title span{
             background: linear-gradient(90deg, #01a5cd 0%, #9ee44d 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: "Euphemia UCAS";
-    font-size: 3.125rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 120%;
-    letter-spacing: 0.025rem;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-family: "Euphemia UCAS";
+            font-size: 3.125rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 120%;
+            letter-spacing: 0.025rem;
         }
         .about-section-title{
             color: #fff;
-    text-align: center;
-    font-family: "Euphemia UCAS";
-    font-size: 3.125rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 120%;
-    letter-spacing: 0.025rem;
-    width: 67.5rem;
+            text-align: center;
+            font-family: "Euphemia UCAS";
+            font-size: 3.125rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 120%;
+            letter-spacing: 0.025rem;
+            width: 67.5rem;
+        }
+    
+        @media (max-width: 480px) {
+            .about-section-title{
+                font-size: 1.5rem;
+            }
+            .about-section-title span{
+                font-size: 1.5rem;
+            }
+        }
+        @media (max-width: 767px) {
+            .about-section-title {
+                font-size: 1.75rem;
+                width: 100%;
+                line-height: 110%;
+                letter-spacing: 0.015rem;
+            }
+            .about-section-title span {
+                font-size: 1.75rem;
+                width: 100%;
+                line-height: 110%;
+                letter-spacing: 0.015rem;
+            }
         }
     </style>
 </head>
@@ -139,7 +162,7 @@
             <div class="main-container">
                 <div class="mission-vision-section-wrapper">
                     <div class="mission-vision-content-wrapper">
-                        <img src="./images/Mission-MW.png" alt="Mission Image" height="350" width="500">
+                        <img src="./images/Mission-MW.png" alt="Mission Image" height="350" width="500" class="vision-mission-image">
                         <div class="mission-vission-flex">
                             <h1 class="section-title-main ">Our Mission</h1>
                             <p class="section-para-main">To deliver robust, secure, and resilient ICS/OT solutions that empower industries to operate with confidence amid evolving cyber threats.</p>
@@ -150,7 +173,7 @@
                             <h1 class="section-title-main ">Our Vision</h1>
                             <p class="section-para-main">To be the global standard in OT security and ICS engineering excellence, bridging the gap between innovation and protection.</p>
                         </div>
-                        <img src="./images/Vision-MW.png" alt="Vision Image" height="350" width="500">
+                        <img src="./images/Vision-MW.png" alt="Vision Image" height="350" width="500" class="vision-mission-image">
                     </div>
                     <a href="#" class="mission-vision-btn-wrapper">
                         <p class="mission-vision-btn">View our leadership <img src="./icons/right-arrow.svg" alt="right arrow" class="right-arrow-btn"></p>

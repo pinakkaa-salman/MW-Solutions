@@ -710,6 +710,7 @@ body {
 
   .mission-vision-content-wrapper {
     gap: 1.5rem;
+    flex-direction: column;
   }
 
   .mission-vision-btn-wrapper {
@@ -793,7 +794,7 @@ body {
   }
 
   .clients-logo-wrapper {
-    gap: 1.5rem;
+    gap: 0.5rem;
     flex-wrap: wrap;
     justify-content: center;
   }
