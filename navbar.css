@@ -374,6 +374,14 @@
   text-transform: uppercase;
   text-decoration: none;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.nav-btn:hover {
+  background: #fff;
+  color: #0a1212;
+  border: 1px solid #000;
+  transition: all 0.2s ease-in-out;
+  scale: 1.01;
 }
 
 /* Hamburger Menu Styles */
@@ -779,7 +787,7 @@
 
 .footer-section {
   height: auto;
-  padding: 5rem 0 0 0;
+  padding: 3rem 0 0 0;
   background: var(--BG-Dark, #171717);
 }
 .footer-section-wrapper {

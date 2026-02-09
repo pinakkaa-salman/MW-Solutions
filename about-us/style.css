@@ -498,6 +498,7 @@ body {
   align-items: center;
   margin-top: 1rem;
 }
+
 .form-button {
   display: flex;
   width: 20.3675rem;
@@ -523,6 +524,12 @@ body {
   line-height: var(--font-size-14, 0.875rem); /* 100% */
   letter-spacing: var(--letter-spacing-1_7, 0.10625rem);
   text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.form-button:hover{
+  scale: 1.02;
+  transition: all 0.2s ease-in-out;
 }
 .right-arrow {
   width: 1.48125rem;

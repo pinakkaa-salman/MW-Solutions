@@ -237,6 +237,7 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
+  overflow: hidden;
 }
 .hero-ellipse {
   width: 55.8125rem;
@@ -299,6 +300,11 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   width: 16.225rem;
+  transition: all 0.2s ease-in-out;
+}
+.hero-btn:hover{
+  scale: 1.02;
+  transition: all 0.2s ease-in-out;
 }
 .hero-image-wrapper {
   width: 33.125rem;
@@ -380,6 +386,11 @@ body {
   letter-spacing: var(--letter-spacing-1_7, 0.10625rem);
   text-transform: uppercase;
   text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+.security-section-btn:hover{
+  scale: 1.02;
+  transition: all 0.2s ease-in-out;
 }
 
 /* services-section */
@@ -569,6 +580,7 @@ body {
   align-items: center;
   border-radius: 1rem;
   position: relative;
+  text-decoration: none;
 }
 .solution-card-image {
   height: 100%;
@@ -658,7 +670,7 @@ body {
 
 .clients-section {
   height: auto;
-  padding: 6.5rem 0 11rem 0;
+  padding: 4.5rem 0 11rem 0;
   background: var(--BG-Dark, #171717);
 }
 .clients-section-wrapper {
@@ -1063,6 +1075,12 @@ body {
   line-height: var(--font-size-14, 0.875rem); /* 100% */
   letter-spacing: var(--letter-spacing-1_7, 0.10625rem);
   text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.form-button:hover{
+  scale: 1.02;
+  transition: all 0.2s ease-in-out;
 }
 .right-arrow {
   width: 1.48125rem;
@@ -2102,11 +2120,12 @@ body {
 
 .defenders-carousel-wrapper {
   width: 100%;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 40px 20px;
+  margin: 1.5rem 0;
 }
 
 .defenders-carousel-container {

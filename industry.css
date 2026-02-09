@@ -338,6 +338,7 @@ body {
   margin-top: 1rem;
 }
 
+
 .form-button {
   display: flex;
   width: 20.3675rem;
@@ -360,16 +361,15 @@ body {
   font-size: var(--font-size-14, 0.875rem);
   font-style: normal;
   font-weight: var(--font-weight-500, 500);
-  line-height: var(--font-size-14, 0.875rem);
+  line-height: var(--font-size-14, 0.875rem); /* 100% */
   letter-spacing: var(--letter-spacing-1_7, 0.10625rem);
   text-transform: uppercase;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease-in-out;
 }
-
-.form-button:hover {
-  background: #027b78;
-  transform: translateY(-2px);
+.form-button:hover{
+  scale: 1.02;
+  transition: all 0.2s ease-in-out;
 }
 
 .right-arrow {
