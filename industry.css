@@ -219,6 +219,7 @@ body {
   line-height: 1.75rem;
   letter-spacing: 0.04rem;
   text-align: justify;
+  width: 100%;
 }
 .content-block-para-extra {
   color: rgba(255, 255, 255, 0.85);

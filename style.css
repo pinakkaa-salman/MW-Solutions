@@ -363,6 +363,7 @@ body {
   font-weight: var(--font-weight-250, 400);
   line-height: var(--line-height-34, 2.125rem); /* 188.889% */
   width: 37rem;
+  text-align: center;
 }
 .security-section-btn {
   display: flex;

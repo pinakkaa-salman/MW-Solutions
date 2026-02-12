@@ -12,11 +12,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <style>
-        .navbar-top {
+        /* .navbar-top {
             display: none !important;
         }
         .navbar{
             padding-top:1rem !important;
+        } */
+        html {
+            scroll-behavior: smooth;
         }
     </style>
 </head>
@@ -26,19 +29,20 @@
             <div class="navbar-top">
                 <div class="main-container">
                     <div class="navbar-top-wrapper">
-                        <img src="./icons/search-icon.svg" alt="" class="search-icon">
-                        <a href="" class="nav-top-links">Blog</a>
-                        <a href="" class="nav-top-links">Contact Us</a>
-                        <a href="" class="nav-top-links">Urgent Incident Response</a>
-                        <a href="" class="nav-top-links">Login</a>
+                        <!-- <img src="./icons/search-icon.svg" alt="" class="search-icon"> -->
+                        <a href="./blogs.html" class="nav-top-links">Blog</a>
+                        <a href="./contact.html" class="nav-top-links">Contact Us</a>
+                        <a href="./contact.html" class="nav-top-links">Urgent Incident Response</a>
+                        <!-- <a href="" class="nav-top-links">Login</a> -->
                     </div>
                 </div>
             </div>
             <div class="navbar-bottom">
                 <div class="main-container">
                     <div class="navbar-bottom-wrapper">
-                        <img src="./icons/logo.svg" alt="" class="navbar-logo">
-                        
+                        <a href="./index.html">
+                            <img src="./icons/logo.svg" alt="" class="navbar-logo">
+                        </a>
                         <!-- Hamburger Button (will be visible on mobile/tablet only) -->
                         <button class="hamburger" aria-label="Toggle menu">
                             <span></span>
@@ -54,15 +58,14 @@
                                 <div class="dropdown-menu">
                                     <a href="./Why-MW.html">Why MW</a>
                                     <a href="./Certificates.html">Certification</a>
-                                    <a href="./blogs.html">Blogs</a>
-                                    <a href="./careers.html">Careers</a>
                                 </div>
                             </div>
                             <div class="nav-item-dropdown">
                                 <a href="#" class="nav-links act">Company <img src="./icons/down-arrow.png" alt="" class="down-arrow"></a>
                                 <div class="dropdown-menu">
                                     <a href="./about.html">About Us</a>
-                                    <a href="./leadership-team.html">Leadership Team</a>
+                                    <a href="./careers.html">Careers</a>
+                                    <!-- <a href="./leadership-team.html">Leadership Team</a> -->
                                 </div>
                             </div>
                             <div class="nav-item-dropdown">
@@ -93,12 +96,14 @@
                                 <a href="#" class="nav-links act">Resources <img src="./icons/down-arrow.png" alt="" class="down-arrow"></a>
                                 <div class="dropdown-menu">
                                     <a href="./cybersecurite-guide.html">Cybersecurity Guide</a>
+                                    <a href="./blogs.html">Blogs</a>
                                 </div>
                             </div>
                             <div class="nav-item-dropdown">
                                 <a href="#" class="nav-links act">Contact <img src="./icons/down-arrow.png" alt="" class="down-arrow"></a>
                                 <div class="dropdown-menu">
                                     <a href="./contact.html">Contact Us</a>
+                                    <a href="./careers.html">Careers</a>
                                     <a href="./faq.html">FAQ</a>
                                 </div>
                             </div>
@@ -118,7 +123,7 @@
                     <div class="hero-content-wrapper">
                         <h1 class="hero-title">Empowering You in the Digital Age</h1>
                         <p class="hero-subtitle">Networking &  Security Solutions</p>
-                        <a href="./contact.html" class="hero-btn">Download the Report</a>
+                        <!-- <a href="./contact.html" class="hero-btn">Download the Report</a> -->
                     </div>
                     <div class="hero-image-wrapper">
                         <img src="./images/hero-image.png" alt="Hero image" class="hero-image">
@@ -130,8 +135,8 @@
             <div class="main-container">
                 <div class="security-section-wrapper">
                     <h1 class="security-section-title">MW Solutions is a leading provider of <span>OT Security & Managed Services</span></h1>
-                    <p class="security-section-subtitle">Built by defenders for defenders, Dragos offers the world’s most intelligent OT cybersecurity platform.</p>
-                    <a href="" class="security-section-btn">Request a Platform Demo</a>
+                    <p class="security-section-subtitle">Built by defenders for defenders, MWSolutions offers the world’s most intelligent OT cybersecurity platform.</p>
+                    <a href="#contact" class="security-section-btn">Request a Platform Demo</a>
                 </div>
             </div>
         </section>
@@ -418,7 +423,7 @@
                                             <!-- <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&h=800&fit=crop" alt="James Wilson" class="defenders-card-image"> -->
                                             <div class="defenders-card-info">
                                                 <h3>Aicha Dellache</h3>
-                                                <p>Chief Executive Officerr</p>
+                                                <p>Chief Executive Officer</p>
                                             </div>
                                         </div>
                                     </div>
@@ -482,7 +487,7 @@
             
         
         </section>
-        <section class="testimonial-section">
+        <!-- <section class="testimonial-section">
             <div class="main-container">
                 <div class="testimonial-section-wrapper">
                     <div class="testimonial-title-wrapper">
@@ -515,7 +520,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <section class="blog-section">
             <div class="ellipse ellipse5"></div>
             <div class="main-container">
@@ -532,14 +537,14 @@
                                 <p class="blog-card-description">April 24, 2022 - 5 min read <br><br><span>Modern nuclear plants rely on advanced digital I&C systems, making OT cybersecurity essential for protecting ...</span></p>
                             </div>
                         </a>
-                        <a href="./blog1.html" class="blog-cards">
+                        <a href="./blog2.html" class="blog-cards">
                             <img src="./images/blog-image2.png" alt="" class="blog-image">
                             <div class="blog-card-content">
                                 <h2 class="blog-card-title">Protecting Nuclear OT</h2>
                                 <p class="blog-card-description">April 03, 2022 - 4 min read <br><br><span>As legacy hard-wired controls shift to digital platforms, securing these systems is crucial. Strong OT cybersecurity ...</span></p>
                             </div>
                         </a>
-                        <a href="./blog1.html" class="blog-cards">
+                        <a href="./blog3.html" class="blog-cards">
                             <img src="./images/blog-image3.png" alt="" class="blog-image">
                             <div class="blog-card-content">
                                 <h2 class="blog-card-title">Safe Nuclear Operations</h2>
@@ -550,7 +555,7 @@
                 </div>
             </div>
         </section>
-        <section class="contact-section">
+        <section class="contact-section" id="contact">
             <div class="main-container">
                 <div class="contact-section-wrapper">
                     <div class="contact-section-content-wrapper">
@@ -643,7 +648,7 @@
                             </div>
                             <div class="footer-links-wrapper">
                                 <a href="./about.html" class="footer-links">About Us</a>
-                                <a href="./leadership-team.html" class="footer-links">Leadership Team</a>
+                                <!-- <a href="./leadership-team.html" class="footer-links">Leadership Team</a> -->
                                 <a href="./careers.html" class="footer-links">Careers</a>
                                 <a href="./contact.html" class="footer-links">Contact</a>
                             </div>

@@ -3,210 +3,213 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MW Solutions - Careers</title>
-    <link rel="stylesheet" href="./services-solutions/style.css">
+    <title>MW Solutions About Us</title>
+    <link rel="stylesheet" href="./industries/style.css">
     <link rel="stylesheet" href="./navbar.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <style>
 
-         /* blog-section */
-        .section-subtitle {
-            color: var(--Accent-1, #3ed5dd);
+.blog-hero {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            padding: 80px 20px;
             text-align: center;
-            font-family: Roboto;
-            font-size: 1.3125rem;
-            font-style: normal;
-            font-weight: 300;
-            line-height: 1.5rem; /* 114.286% */
-            letter-spacing: 0.105rem;
-            text-align: center;
+            color: white;
+        }
+
+        .blog-hero-category {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .blog-hero-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .blog-hero-meta {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            font-size: 14px;
+            opacity: 0.9;
+            flex-wrap: wrap;
+        }
+
+        .blog-hero-meta span {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .blog-container {
+            max-width: 850px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .blog-intro {
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 50px;
+            font-family: "Inter", sans-serif;
         }
 
         .blog-section {
-            height: auto;
-            padding: 4.6rem 0 5rem 0;
-            background: var(--BG-Dark, #171717);
+            margin-bottom: 50px;
+        }
+
+        .blog-section-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 32px;
+            font-weight: 600;
+            color: #000;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #e5e7eb;
+        }
+
+        .blog-section-content {
+            font-size: 0.9rem;
+            line-height: 1.8;
+            color: #4b5563;
+            margin-bottom: 20px;
+            font-family: "Inter", sans-serif;
+        }
+
+        .blog-highlight-box {
+            margin: 30px 0;
+        }
+
+        .blog-highlight-box h3 {
+            font-family: 'Poppins', sans-serif;
+            color: #1e3a8a;
+            font-size: 20px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .blog-highlight-box p {
+            color: #4b5563;
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        .blog-list {
+            margin: 25px 0;
+            padding-left: 0;
+            list-style: none;
+        }
+
+        .blog-list li {
             position: relative;
+            padding-left: 30px;
+            margin-bottom: 15px;
+            font-size: 17px;
+            color: #4b5563;
+            line-height: 1.7;
         }
-        .blog-section-wrapper {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 5rem;
+
+        .blog-list li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #3b82f6;
+            font-weight: bold;
+            font-size: 20px;
         }
-        .blog-section-title-wrapper {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 0.5rem;
+
+        .blog-quote {
+            color: #374151;
+            padding: 0;
+            margin: 40px 0;
+            font-size: 19px;
+            font-style: italic;
+            line-height: 1.7;
         }
-        .blog-cards-wrapper {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 1.25rem;
-            z-index: 100;
-        }
-        .blog-cards {
-            width: 23.0625rem;
-            height: 32.375rem;
-            flex-shrink: 0;
-            border-radius: 1rem;
-            background: #171717;
-            box-shadow: 0 4px 10px 0 #1a2d2f;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .blog-image {
-            width: 23.0625rem;
-            height: 18.30063rem;
-            flex-shrink: 0;
-            border-radius: 1.25rem 1.25rem 0 0;
-        }
-        .blog-card-content {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 1rem;
-            height: 100%;
-            width: 100%;
-        }
-        .blog-card-title {
-            color: var(--Slate-50, #f8fafc);
+
+        .blog-cta {
+            background: #f8fafc;
+            padding: 50px;
+            border-radius: 8px;
             text-align: center;
-            font-family: "Euphemia UCAS";
-            font-size: 1.5rem;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
-        }
-        .blog-card-description {
-            color: var(--Gray-400, #9ca3af);
-            text-align: center;
-            font-family: Roboto;
-            font-size: 1.25rem;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            width: 16rem;
-        }
-        .blog-card-description span {
-            color: #8b929c;
-            font-family: Roboto;
-            font-size: 1rem;
-            font-style: normal;
-            font-weight: 300;
-            line-height: normal;
-        }
-        
-
-        /* Tablet Responsive */
-        @media (max-width: 1024px) {
-            /* Blog Section */
-            .blog-section {
-                padding: 4rem 0;
-            }
-
-            .blog-section-wrapper {
-                gap: 4rem;
-            }
-
-            .blog-cards-wrapper {
-                flex-wrap: wrap;
-            }
-
-            .blog-cards {
-                width: 100%;
-                max-width: 22rem;
-            }
-
-            .blog-image {
-                width: 100%;
-            }
+            margin-top: 60px;
         }
 
-        /* Mobile Responsive */
-        @media (max-width: 767px) {
-            /* Blog Section */
-            .blog-section {
-                padding: 3rem 0 4rem 0;
-            }
-
-            .blog-section-wrapper {
-                gap: 3rem;
-            }
-
-            .blog-section-title-wrapper {
-                gap: 0.75rem;
-            }
-
-            .blog-cards-wrapper {
-                flex-direction: column;
-                gap: 1.5rem;
-            }
-
-            .blog-cards {
-                width: 100%;
-                max-width: 20rem;
-                height: auto;
-            }
-
-            .blog-image {
-                width: 100%;
-                height: auto;
-            }
-
-            .blog-card-content {
-                padding: 1.5rem 1rem;
-                gap: 0.75rem;
-            }
-
-            .blog-card-title {
-                font-size: 1.25rem;
-            }
-
-            .blog-card-description {
-                font-size: 1rem;
-                width: 100%;
-            }
-
-            .blog-card-description span {
-                font-size: 0.875rem;
-            }
+        .blog-cta h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 32px;
+            margin-bottom: 20px;
+            font-weight: 600;
+            color: #1e3a8a;
         }
 
-        /* Extra Small Mobile */
-        @media (max-width: 480px) {
-            
-        }
-        @media (max-width: 767px) and (orientation: landscape) {
-            .blog-section {
-                padding: 2.5rem 0 3rem 0;
-            }
-
-            .blog-cards-wrapper {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                gap: 1rem;
-            }
+        .blog-cta p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #4b5563;
         }
 
+        .blog-cta-button {
+            display: inline-block;
+            background: #1e3a8a;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: background 0.3s ease;
+        }
 
-        .blog-cards {
-  text-decoration: none !important;
-  color: inherit !important;
-}
+        .blog-cta-button:hover {
+            background: #3b82f6;
+        }
 
-        
-       
+        @media (max-width: 768px) {
+            .blog-hero-title {
+                font-size: 32px;
+            }
+
+            .blog-section-title {
+                font-size: 1.5rem;
+            }
+
+            .blog-intro {
+                font-size: 0.8rem;
+                padding: 10px 0;
+            }
+
+            .blog-section-content {
+                font-size: 0.8rem;
+            }
+
+            .blog-cta {
+                padding: 30px 20px;
+            }
+
+            .blog-cta h2 {
+                font-size: 26px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -300,79 +303,83 @@
                 </div>
             </div>
         </nav>
+        <!-- Mobile Overlay -->
         <div class="mobile-overlay"></div>
-
-        <section class="service-section">
+        <section class="industries-section">
             <div class="main-container">
-                <div class="service-section-wrapper">
-                    <div class="service-section-content-wrapper">
-                        <p class="service-section-subtitle">Blogs</p>
-                        <h1 class="service-section-title">Your Source for <SPAN>Cybersecurity </SPAN> Knowledge</h1>
+                <div class="industries-section-wrapper">
+                    <div class="industries-section-content-wrapper">
+                        <p class="industries-section-subtitle">Nuclear Industry</p>
+                        <h1 class="industries-section-title">Protecting Nuclear OT: Strengthening Cyber Resilience in Safety-Critical Environments</h1>
                     </div>
                 </div>
             </div>
         </section>
-
-        <section class="blog-section">
-            <div class="ellipse ellipse5"></div>
-            <div class="main-container">
-                <div class="blog-section-wrapper">
-                    <div class="blog-section-title-wrapper">
-                        <!-- <h3 class="section-subtitle">Blogs</h3> -->
-                        <h1 class="section-title">Latest News</h1>
-                    </div>
-                    <div class="blog-cards-wrapper">
-                        <a href="./blog1.html" class="blog-cards">
-                            <img src="./images/blog-image1.png" alt="" class="blog-image">
-                            <div class="blog-card-content">
-                                <h2 class="blog-card-title">Nuclear System Security</h2>
-                                <p class="blog-card-description">April 24, 2022 - 5 min read <br><br><span>Modern nuclear plants rely on advanced digital I&C systems, making OT cybersecurity essential for protecting ...</span></p>
-                            </div>
-                        </a>
-                        <a href="./blog2.html" class="blog-cards">
-                            <img src="./images/blog-image2.png" alt="" class="blog-image">
-                            <div class="blog-card-content">
-                                <h2 class="blog-card-title">Protecting Nuclear OT</h2>
-                                <p class="blog-card-description">April 03, 2022 - 4 min read <br><br><span>As legacy hard-wired controls shift to digital platforms, securing these systems is crucial. Strong OT cybersecurity ...</span></p>
-                            </div>
-                        </a>
-                        <a href="./blog3.html" class="blog-cards">
-                            <img src="./images/blog-image3.png" alt="" class="blog-image">
-                            <div class="blog-card-content">
-                                <h2 class="blog-card-title">Safe Nuclear Operations</h2>
-                                <p class="blog-card-description">March 12, 2022 - 6 min read <br><br><span>Digital control systems have improved efficiency in nuclear plants, but they also bring new cyber risks. Robust OT...</span></p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="blog-cards-wrapper">
-                        <a href="./blog1.html" class="blog-cards">
-                            <img src="./images/blog-image1.png" alt="" class="blog-image">
-                            <div class="blog-card-content">
-                                <h2 class="blog-card-title">Nuclear System Security</h2>
-                                <p class="blog-card-description">April 24, 2022 - 5 min read <br><br><span>Modern nuclear plants rely on advanced digital I&C systems, making OT cybersecurity essential for protecting ...</span></p>
-                            </div>
-                        </a>
-                        <a href="./blog2.html" class="blog-cards">
-                            <img src="./images/blog-image2.png" alt="" class="blog-image">
-                            <div class="blog-card-content">
-                                <h2 class="blog-card-title">Protecting Nuclear OT</h2>
-                                <p class="blog-card-description">April 03, 2022 - 4 min read <br><br><span>As legacy hard-wired controls shift to digital platforms, securing these systems is crucial. Strong OT cybersecurity ...</span></p>
-                            </div>
-                        </a>
-                        <a href="./blog3.html" class="blog-cards">
-                            <img src="./images/blog-image3.png" alt="" class="blog-image">
-                            <div class="blog-card-content">
-                                <h2 class="blog-card-title">Safe Nuclear Operations</h2>
-                                <p class="blog-card-description">March 12, 2022 - 6 min read <br><br><span>Digital control systems have improved efficiency in nuclear plants, but they also bring new cyber risks. Robust OT...</span></p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+        
+        
+        <!-- Blog Content -->
+        <article class="blog-container">
+        
+            <!-- Introduction -->
+            <div class="blog-intro">
+                Operational Technology (OT) systems form the backbone of modern nuclear power facilities. These systems control reactor operations, cooling mechanisms, turbine performance, and safety instrumentation. As nuclear plants increasingly integrate digital technologies and networked control systems, the need to protect Nuclear OT environments from cyber threats has become mission-critical. A successful cyber intrusion in a nuclear facility can lead to operational disruption, financial loss, reputational damage, and potentially severe safety consequences. Protecting Nuclear OT is no longer optional — it is a strategic imperative.
             </div>
-        </section>
-
+        
+            <!-- Section 1 -->
+            <section class="blog-section">
+                <h2 class="blog-section-title">The Unique Nature of Nuclear OT Environments</h2>
+                <p class="blog-section-content">
+                    Unlike traditional IT systems, Nuclear OT environments prioritize safety, availability, and reliability above all else. These systems often include legacy programmable logic controllers (PLCs), distributed control systems (DCS), and safety instrumented systems (SIS) that were not originally designed with cybersecurity in mind. Many operate in isolated or semi-isolated networks, making updates and patch management complex. Any modification must undergo strict validation to ensure it does not impact operational safety. This delicate balance between security and uninterrupted operations makes Nuclear OT protection uniquely challenging.
+                </p>
+            </section>
+        
+            <!-- Section 2 -->
+            <section class="blog-section">
+                <h2 class="blog-section-title">Emerging Cyber Threats to Nuclear Facilities</h2>
+                <p class="blog-section-content">
+                    Advanced persistent threats (APTs), ransomware campaigns, insider threats, and supply chain compromises have increasingly targeted critical infrastructure sectors. Incidents such as Stuxnet demonstrated how sophisticated malware can manipulate industrial control logic while remaining undetected. In nuclear environments, attackers may target remote access systems, third-party vendor connections, or poorly segmented networks. The convergence of IT and OT networks further expands the attack surface, creating pathways for cyber adversaries to move laterally into critical control systems.
+                </p>
+            </section>
+        
+            <!-- Section 3 -->
+            <section class="blog-section">
+                <h2 class="blog-section-title">Core Strategies for Protecting Nuclear OT</h2>
+                <p class="blog-section-content">
+                    Effective Nuclear OT cybersecurity requires a layered defense strategy. Key measures include network segmentation between IT and OT environments, continuous asset discovery, strict access control policies, multi-factor authentication, and real-time monitoring of industrial protocols. Implementing intrusion detection systems (IDS) tailored for OT networks allows early detection of abnormal behavior. Additionally, adopting international frameworks such as IAEA guidance and IEC 62443 standards ensures compliance and structured risk management. Regular risk assessments and scenario-based incident response planning are essential to maintaining operational resilience.
+                </p>
+            </section>
+        
+            <!-- Section 4 -->
+            <section class="blog-section">
+                <h2 class="blog-section-title">Building a Cyber-Resilient Nuclear Future</h2>
+                <p class="blog-section-content">
+                    Protecting Nuclear OT is not a one-time implementation but an ongoing commitment to resilience. As digital transformation accelerates, nuclear operators must invest in security-by-design architectures, workforce training, and continuous threat intelligence integration. Collaboration between engineering teams, cybersecurity professionals, and regulatory bodies is vital to safeguarding safety-critical operations. By adopting proactive security strategies and advanced monitoring capabilities, nuclear facilities can ensure safe, reliable, and secure power generation in an increasingly complex cyber landscape.
+                </p>
+            </section>
+        
+        </article>
         
 
+
+
+        <section class="contact-section">
+            <div class="main-container">
+                <div class="contact-section-wrapper">
+                    <div class="contact-section-content-wrapper">
+                        <h1 class="contact-section-title">Get in Touch with our industrial security specialists</h1>
+                    </div>
+                    <form class="contact-section-form">
+                        <input type="text" name="name" placeholder="Name" class="form-input" required>
+                        <input type="email" name="email" placeholder="Email" class="form-input" required>
+                        <textarea name="message" id="" cols="30" rows="10" placeholder="Message" class="form-input-big" required></textarea>
+                        <div class="form-button-wrapper">
+                            <button type="submit" class="form-button">Request a Platform Demo <img src="./icons/right-arrow.svg" alt="Right Arrow" class="right-arrow"></button>
+                        </div>
+                        <div class="contact-form-note" style="display:none; margin-top: 15px;"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
         <footer class="footer-section">
             <div class="main-container-big">
                 <div class="footer-section-wrapper">
@@ -457,6 +464,9 @@
             </div>
         </footer>
     </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./email.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./script.js"></script>
 </body>
 </html>
