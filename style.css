@@ -212,7 +212,11 @@
   font-family: "Gilroy";
 }
 
-html,
+
+html {
+  scroll-behavior: smooth !important;
+}
+
 body {
   height: 100%;
   width: 100%;
@@ -2001,7 +2005,7 @@ body {
   }
   .section-title{
     font-size: 1.5rem;
-    max-width: 90% !important;
+    /* max-width: 90% !important; */
   }
   .section-description{
     max-width: 90%;
