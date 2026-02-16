@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <style>
 
-.blog-hero {
+        .blog-hero {
             background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
             padding: 80px 20px;
             text-align: center;
@@ -211,6 +211,14 @@
             }
         }
     </style>
+    <style>
+        .navbar-top {
+            display: none !important;
+        }
+        .navbar{
+            padding-top:1rem !important;
+        }
+    </style>
 </head>
 <body>
     <main>
@@ -218,11 +226,11 @@
             <div class="navbar-top">
                 <div class="main-container">
                     <div class="navbar-top-wrapper">
-                        <!-- <img src="./icons/search-icon.svg" alt="" class="search-icon"> -->
-                        <a href="./blogs.html" class="nav-top-links">Blog</a>
-                        <a href="./contact.html" class="nav-top-links">Contact Us</a>
-                        <a href="./contact.html" class="nav-top-links">Urgent Incident Response</a>
-                        <!-- <a href="" class="nav-top-links">Login</a> -->
+                        <img src="./icons/search-icon.svg" alt="" class="search-icon">
+                        <a href="" class="nav-top-links">Blog</a>
+                        <a href="" class="nav-top-links">Contact Us</a>
+                        <a href="" class="nav-top-links">Urgent Incident Response</a>
+                        <a href="" class="nav-top-links">Login</a>
                     </div>
                 </div>
             </div>
@@ -232,6 +240,7 @@
                         <a href="./index.html">
                             <img src="./icons/logo.svg" alt="" class="navbar-logo">
                         </a>
+                        
                         <!-- Hamburger Button (will be visible on mobile/tablet only) -->
                         <button class="hamburger" aria-label="Toggle menu">
                             <span></span>
@@ -253,8 +262,8 @@
                                 <a href="#" class="nav-links act">Company <img src="./icons/down-arrow.png" alt="" class="down-arrow"></a>
                                 <div class="dropdown-menu">
                                     <a href="./about.html">About Us</a>
+                                    <a href="./leadership-team.html">Leadership Team</a>
                                     <a href="./careers.html">Careers</a>
-                                    <!-- <a href="./leadership-team.html">Leadership Team</a> -->
                                 </div>
                             </div>
                             <div class="nav-item-dropdown">
@@ -292,8 +301,8 @@
                                 <a href="#" class="nav-links act">Contact <img src="./icons/down-arrow.png" alt="" class="down-arrow"></a>
                                 <div class="dropdown-menu">
                                     <a href="./contact.html">Contact Us</a>
-                                    <a href="./careers.html">Careers</a>
                                     <a href="./faq.html">FAQ</a>
+                                    <a href="./careers.html">Careers</a>
                                 </div>
                             </div>
                             <!-- <a href="./contact.html" class="nav-links">Contact Us</a> -->
@@ -310,55 +319,84 @@
                 <div class="industries-section-wrapper">
                     <div class="industries-section-content-wrapper">
                         <p class="industries-section-subtitle">Nuclear Industry</p>
-                        <h1 class="industries-section-title">Protecting Nuclear OT: Strengthening Cyber Resilience in Safety-Critical Environments</h1>
+                        <h1 class="industries-section-title">Securing Nuclear OT Without Disrupting Operations</h1>
+                        
                     </div>
                 </div>
             </div>
         </section>
         
         
-        <!-- Blog Content -->
-        <article class="blog-container">
-        
-            <!-- Introduction -->
-            <div class="blog-intro">
-                Operational Technology (OT) systems form the backbone of modern nuclear power facilities. These systems control reactor operations, cooling mechanisms, turbine performance, and safety instrumentation. As nuclear plants increasingly integrate digital technologies and networked control systems, the need to protect Nuclear OT environments from cyber threats has become mission-critical. A successful cyber intrusion in a nuclear facility can lead to operational disruption, financial loss, reputational damage, and potentially severe safety consequences. Protecting Nuclear OT is no longer optional — it is a strategic imperative.
+
+
+        <!-- <section class="blog-hero">
+            <div class="blog-hero-category">Nuclear Industry</div>
+            <h1 class="blog-hero-title">Securing Safety-Critical Systems in the Nuclear Industry: The Role of OT Cybersecurity</h1>
+            <div class="blog-hero-meta">
+                <span>📅 November 14, 2025</span>
+                <span>⏱️ 5 min read</span>
+                <span>👤 MW Solutions</span>
             </div>
-        
-            <!-- Section 1 -->
-            <section class="blog-section">
-                <h2 class="blog-section-title">The Unique Nature of Nuclear OT Environments</h2>
-                <p class="blog-section-content">
-                    Unlike traditional IT systems, Nuclear OT environments prioritize safety, availability, and reliability above all else. These systems often include legacy programmable logic controllers (PLCs), distributed control systems (DCS), and safety instrumented systems (SIS) that were not originally designed with cybersecurity in mind. Many operate in isolated or semi-isolated networks, making updates and patch management complex. Any modification must undergo strict validation to ensure it does not impact operational safety. This delicate balance between security and uninterrupted operations makes Nuclear OT protection uniquely challenging.
-                </p>
-            </section>
-        
-            <!-- Section 2 -->
-            <section class="blog-section">
-                <h2 class="blog-section-title">Emerging Cyber Threats to Nuclear Facilities</h2>
-                <p class="blog-section-content">
-                    Advanced persistent threats (APTs), ransomware campaigns, insider threats, and supply chain compromises have increasingly targeted critical infrastructure sectors. Incidents such as Stuxnet demonstrated how sophisticated malware can manipulate industrial control logic while remaining undetected. In nuclear environments, attackers may target remote access systems, third-party vendor connections, or poorly segmented networks. The convergence of IT and OT networks further expands the attack surface, creating pathways for cyber adversaries to move laterally into critical control systems.
-                </p>
-            </section>
-        
-            <!-- Section 3 -->
-            <section class="blog-section">
-                <h2 class="blog-section-title">Core Strategies for Protecting Nuclear OT</h2>
-                <p class="blog-section-content">
-                    Effective Nuclear OT cybersecurity requires a layered defense strategy. Key measures include network segmentation between IT and OT environments, continuous asset discovery, strict access control policies, multi-factor authentication, and real-time monitoring of industrial protocols. Implementing intrusion detection systems (IDS) tailored for OT networks allows early detection of abnormal behavior. Additionally, adopting international frameworks such as IAEA guidance and IEC 62443 standards ensures compliance and structured risk management. Regular risk assessments and scenario-based incident response planning are essential to maintaining operational resilience.
-                </p>
-            </section>
-        
-            <!-- Section 4 -->
-            <section class="blog-section">
-                <h2 class="blog-section-title">Building a Cyber-Resilient Nuclear Future</h2>
-                <p class="blog-section-content">
-                    Protecting Nuclear OT is not a one-time implementation but an ongoing commitment to resilience. As digital transformation accelerates, nuclear operators must invest in security-by-design architectures, workforce training, and continuous threat intelligence integration. Collaboration between engineering teams, cybersecurity professionals, and regulatory bodies is vital to safeguarding safety-critical operations. By adopting proactive security strategies and advanced monitoring capabilities, nuclear facilities can ensure safe, reliable, and secure power generation in an increasingly complex cyber landscape.
-                </p>
-            </section>
-        
-        </article>
-        
+        </section> -->
+    
+        <!-- Hero Section -->
+    <!-- <section class="blog-hero">
+        <div class="blog-hero-category">Nuclear Industry</div>
+        <h1 class="blog-hero-title">Securing Safety-Critical Systems in the Nuclear Industry: The Role of OT Cybersecurity</h1>
+        <div class="blog-hero-meta">
+            <span>📅 November 14, 2025</span>
+            <span>⏱️ 5 min read</span>
+            <span>👤 MW Solutions</span>
+        </div>
+    </section> -->
+
+    <!-- Blog Content -->
+    <article class="blog-container">
+        <!-- Introduction -->
+        <div class="blog-intro">
+            As legacy hard-wired controls evolve into modern digital platforms, nuclear OT (Operational Technology) faces a unique challenge: you can’t secure it like corporate IT, and you can’t treat it as “safe” just because it feels isolated.
+        </div>
+
+        <!-- Section 1 -->
+        <section class="blog-section">
+            <h2 class="blog-section-title">Why OT Security Is Different</h2>
+            <p class="blog-section-content">
+                OT exists to maintain availability and deterministic behavior—systems must respond on time, every time. That’s why common IT practices (rapid patching, aggressive scanning, frequent configuration change) can introduce risk if they disrupt plant operations. Effective OT security focuses on controlled change, high visibility, and stability.
+            </p>
+        </section>
+
+        <!-- Section 2 -->
+        <section class="blog-section">
+            <h2 class="blog-section-title">Core Cyber Risks in Nuclear OT</h2>
+            <p class="blog-section-content">
+                Digital OT increases the number of connections, dependencies, and trust assumptions inside the plant environment. Common risk themes include unauthorized remote access, misconfigurations that weaken segmentation, insecure vendor workflows, uncontrolled removable media, and poor visibility into what “normal” looks like—making anomalies harder to catch early.
+            </p>
+        </section>
+
+        <!-- Section 3 -->
+        <section class="blog-section">
+            <h2 class="blog-section-title">Practical Controls That Fit Engineering Reality</h2>
+            <p class="blog-section-content">A workable nuclear OT protection stack is usually built around:<br><br> • Zones & conduits segmentation: isolating safety, control, DMZ/historian, and enterprise pathways to prevent lateral movement. <br><br> • Strong remote access: jump servers, MFA, approvals, and monitoring—especially for vendors. <br><br> • Safe monitoring: passive network visibility and OT-tuned logging so you can detect issues without breaking fragile systems. <br><br> • Patch strategy + compensating controls: patch when feasible; when not, reduce exposure through isolation, allow-listing, strict permissions, and hardened configurations. <br><br> • Protecting nuclear OT isn’t about piling on tools. It’s about building a stable, layered system where every connection is intentional and every change is understood.  
+            </p>
+        </section>
+
+        <!-- Section 4 -->
+        <section class="blog-section">
+            <h2 class="blog-section-title">MW Solutions' Approach to OT Cybersecurity</h2>
+            <p class="blog-section-content">
+                At MW Solutions, we specialize in OT cybersecurity for critical infrastructure sectors, including the nuclear industry. Our services encompass comprehensive cybersecurity risk assessments, asset discovery, threat modeling, and the implementation of secure-by-design principles. We assist clients in developing and implementing robust cybersecurity strategies tailored to their specific operational needs and regulatory requirements.
+            </p>
+        </section>
+
+        <!-- Call to Action -->
+        <!-- <div class="blog-cta">
+            <h2>Ready to Secure Your Critical Infrastructure?</h2>
+            <p>Contact our OT cybersecurity specialists to learn how we can help protect your nuclear facility against evolving cyber threats.</p>
+            <a href="#" class="blog-cta-button">Get in Touch →</a>
+        </div> -->
+    </article>
+
+
 
 
 
@@ -446,7 +484,7 @@
                             </div>
                             <div class="footer-links-wrapper">
                                 <a href="./about.html" class="footer-links">About Us</a>
-                                <!-- <a href="./leadership-team.html" class="footer-links">Leadership Team</a> -->
+                                <a href="./leadership-team.html" class="footer-links">Leadership Team</a>
                                 <a href="./careers.html" class="footer-links">Careers</a>
                                 <a href="./contact.html" class="footer-links">Contact</a>
                             </div>

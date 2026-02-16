@@ -211,6 +211,14 @@
             }
         }
     </style>
+    <style>
+        .navbar-top {
+            display: none !important;
+        }
+        .navbar{
+            padding-top:1rem !important;
+        }
+    </style>
 </head>
 <body>
     <main>
@@ -218,11 +226,11 @@
             <div class="navbar-top">
                 <div class="main-container">
                     <div class="navbar-top-wrapper">
-                        <!-- <img src="./icons/search-icon.svg" alt="" class="search-icon"> -->
-                        <a href="./blogs.html" class="nav-top-links">Blog</a>
-                        <a href="./contact.html" class="nav-top-links">Contact Us</a>
-                        <a href="./contact.html" class="nav-top-links">Urgent Incident Response</a>
-                        <!-- <a href="" class="nav-top-links">Login</a> -->
+                        <img src="./icons/search-icon.svg" alt="" class="search-icon">
+                        <a href="" class="nav-top-links">Blog</a>
+                        <a href="" class="nav-top-links">Contact Us</a>
+                        <a href="" class="nav-top-links">Urgent Incident Response</a>
+                        <a href="" class="nav-top-links">Login</a>
                     </div>
                 </div>
             </div>
@@ -232,6 +240,7 @@
                         <a href="./index.html">
                             <img src="./icons/logo.svg" alt="" class="navbar-logo">
                         </a>
+                        
                         <!-- Hamburger Button (will be visible on mobile/tablet only) -->
                         <button class="hamburger" aria-label="Toggle menu">
                             <span></span>
@@ -253,8 +262,8 @@
                                 <a href="#" class="nav-links act">Company <img src="./icons/down-arrow.png" alt="" class="down-arrow"></a>
                                 <div class="dropdown-menu">
                                     <a href="./about.html">About Us</a>
+                                    <a href="./leadership-team.html">Leadership Team</a>
                                     <a href="./careers.html">Careers</a>
-                                    <!-- <a href="./leadership-team.html">Leadership Team</a> -->
                                 </div>
                             </div>
                             <div class="nav-item-dropdown">
@@ -292,8 +301,8 @@
                                 <a href="#" class="nav-links act">Contact <img src="./icons/down-arrow.png" alt="" class="down-arrow"></a>
                                 <div class="dropdown-menu">
                                     <a href="./contact.html">Contact Us</a>
-                                    <a href="./careers.html">Careers</a>
                                     <a href="./faq.html">FAQ</a>
+                                    <a href="./careers.html">Careers</a>
                                 </div>
                             </div>
                             <!-- <a href="./contact.html" class="nav-links">Contact Us</a> -->
@@ -305,64 +314,90 @@
         </nav>
         <!-- Mobile Overlay -->
         <div class="mobile-overlay"></div>
-        
-        
-
-
         <section class="industries-section">
             <div class="main-container">
                 <div class="industries-section-wrapper">
                     <div class="industries-section-content-wrapper">
                         <p class="industries-section-subtitle">Nuclear Industry</p>
-                        <h1 class="industries-section-title">Safe Nuclear Operations: Strengthening Security, Reliability, and Operational Resilience</h1>
+                        <h1 class="industries-section-title">Safe Nuclear Operations in the Digital Age</h1>
+                        
                     </div>
                 </div>
             </div>
         </section>
         
         
-        <!-- Blog Content -->
-        <article class="blog-container">
-        
-            <!-- Introduction -->
-            <div class="blog-intro">
-                Safe nuclear operations depend on precision, reliability, and strict regulatory compliance. Modern nuclear facilities increasingly rely on digital control systems to enhance efficiency, automate processes, and improve real-time monitoring. While digital transformation has significantly strengthened operational performance, it has also introduced new cybersecurity and system integrity challenges. Ensuring safe nuclear operations today requires a comprehensive approach that integrates engineering excellence with robust OT cybersecurity strategies.
+
+
+        <!-- <section class="blog-hero">
+            <div class="blog-hero-category">Nuclear Industry</div>
+            <h1 class="blog-hero-title">Securing Safety-Critical Systems in the Nuclear Industry: The Role of OT Cybersecurity</h1>
+            <div class="blog-hero-meta">
+                <span>📅 November 14, 2025</span>
+                <span>⏱️ 5 min read</span>
+                <span>👤 MW Solutions</span>
             </div>
-        
-            <!-- Section 1 -->
-            <section class="blog-section">
-                <h2 class="blog-section-title">Digital Transformation in Nuclear Facilities</h2>
-                <p class="blog-section-content">
-                    Nuclear plants have evolved from analog instrumentation to advanced digital control systems such as Distributed Control Systems (DCS), Programmable Logic Controllers (PLCs), and Safety Instrumented Systems (SIS). These technologies provide enhanced diagnostics, predictive maintenance capabilities, and improved operational visibility. However, as control systems become more interconnected, the boundary between IT and OT environments narrows, increasing exposure to cyber threats. Maintaining operational safety now requires secure system integration and continuous monitoring.
-                </p>
-            </section>
-        
-            <!-- Section 2 -->
-            <section class="blog-section">
-                <h2 class="blog-section-title">Understanding Cyber Risks in Safety-Critical Systems</h2>
-                <p class="blog-section-content">
-                    Safety-critical systems in nuclear environments are designed to prevent hazardous conditions and maintain stable operations. However, cyber incidents targeting control logic, remote access pathways, or third-party vendor connections can disrupt these systems. Threat actors may exploit unpatched vulnerabilities, misconfigured networks, or legacy components not built with cybersecurity in mind. Even minor disruptions in control networks can have cascading operational consequences, making proactive cybersecurity essential for maintaining safety margins.
-                </p>
-            </section>
-        
-            <!-- Section 3 -->
-            <section class="blog-section">
-                <h2 class="blog-section-title">Implementing a Defense-in-Depth Strategy</h2>
-                <p class="blog-section-content">
-                    Achieving safe nuclear operations requires a layered defense model that protects both physical and digital assets. Key measures include strict network segmentation, secure remote access management, multi-factor authentication, continuous asset inventory management, and real-time industrial network monitoring. Intrusion detection systems specifically designed for OT protocols help detect anomalies before they escalate into operational incidents. Regular cybersecurity risk assessments and incident response simulations further strengthen preparedness and resilience.
-                </p>
-            </section>
-        
-            <!-- Section 4 -->
-            <section class="blog-section">
-                <h2 class="blog-section-title">Regulatory Compliance and Continuous Improvement</h2>
-                <p class="blog-section-content">
-                    Nuclear facilities operate under rigorous international and national regulatory frameworks. Compliance with standards such as IEC 62443 and IAEA cybersecurity guidance ensures structured risk management and consistent security practices. However, compliance alone is not sufficient. Safe nuclear operations demand continuous improvement through workforce training, threat intelligence sharing, system upgrades, and proactive vulnerability management. By embedding cybersecurity into operational strategy, nuclear organizations can ensure long-term safety, reliability, and public trust.
-                </p>
-            </section>
-        
-        </article>
-        
+        </section> -->
+    
+        <!-- Hero Section -->
+    <!-- <section class="blog-hero">
+        <div class="blog-hero-category">Nuclear Industry</div>
+        <h1 class="blog-hero-title">Securing Safety-Critical Systems in the Nuclear Industry: The Role of OT Cybersecurity</h1>
+        <div class="blog-hero-meta">
+            <span>📅 November 14, 2025</span>
+            <span>⏱️ 5 min read</span>
+            <span>👤 MW Solutions</span>
+        </div>
+    </section> -->
+
+    <!-- Blog Content -->
+    <article class="blog-container">
+        <!-- Introduction -->
+        <div class="blog-intro">
+            Digital control systems improve insight and efficiency in nuclear plants, but they also introduce cyber risk that can affect operational safety. Safe nuclear operations today means safety and security working as one discipline, not two separate efforts.
+        </div>
+
+        <!-- Section 1 -->
+        <section class="blog-section">
+            <h2 class="blog-section-title">Safety Assumptions That Cybersecurity Must Protect</h2>
+            <p class="blog-section-content">
+                A strong operating mindset starts with: What must always be true for the plant to operate safely? Cybersecurity then helps protect the assumptions safety depends on—trusted sensor readings, reliable controller behavior, and continuous operator visibility.
+            </p>
+        </section>
+
+        <!-- Section 2 -->
+        <section class="blog-section">
+            <h2 class="blog-section-title">Operational Security Controls That Actually Stick</h2>
+            <p class="blog-section-content">
+                Effective programs focus on controls that match the way plants run: <br><br> • Cyber-informed risk assessment: mapping threats to operational impact (loss of view, loss of control, unsafe setpoints), not just data loss.<br><br> •Enforced change management: configurations, remote sessions, and vendor work are tracked, approved, tested, and auditable.<br><br> •Human factors and training: engineers/operators learn to spot abnormal system behavior—not only “email threats.”
+            </p>
+        </section>
+
+        <!-- Section 3 -->
+        <section class="blog-section">
+            <h2 class="blog-section-title">Detection, Drills, and Recovery Under Stress</h2>
+            <p class="blog-section-content">
+                Safe operations depend on early detection and practiced recovery. That means defining baselines for “healthy” behavior, alerting that prioritizes operational relevance (so alarms don’t become noise), and drills that simulate degraded conditions. Recovery planning should include validated backups for critical engineering/configuration assets and rehearsed procedures that keep the plant predictable and safe even when something unexpected happens.
+
+In the end, safe nuclear operations isn’t about perfect prevention—it’s about controlled, resilient operation: systems that remain predictable, recoverable, and safe under pressure.
+            </p>
+        </section>
+
+        <!-- Section 4 -->
+        <section class="blog-section">
+            <h2 class="blog-section-title">MW Solutions' Approach to OT Cybersecurity</h2>
+            <p class="blog-section-content">
+                At MW Solutions, we specialize in OT cybersecurity for critical infrastructure sectors, including the nuclear industry. Our services encompass comprehensive cybersecurity risk assessments, asset discovery, threat modeling, and the implementation of secure-by-design principles. We assist clients in developing and implementing robust cybersecurity strategies tailored to their specific operational needs and regulatory requirements.
+            </p>
+        </section>
+
+        <!-- Call to Action -->
+        <!-- <div class="blog-cta">
+            <h2>Ready to Secure Your Critical Infrastructure?</h2>
+            <p>Contact our OT cybersecurity specialists to learn how we can help protect your nuclear facility against evolving cyber threats.</p>
+            <a href="#" class="blog-cta-button">Get in Touch →</a>
+        </div> -->
+    </article>
 
 
 
@@ -452,7 +487,7 @@
                             </div>
                             <div class="footer-links-wrapper">
                                 <a href="./about.html" class="footer-links">About Us</a>
-                                <!-- <a href="./leadership-team.html" class="footer-links">Leadership Team</a> -->
+                                <a href="./leadership-team.html" class="footer-links">Leadership Team</a>
                                 <a href="./careers.html" class="footer-links">Careers</a>
                                 <a href="./contact.html" class="footer-links">Contact</a>
                             </div>

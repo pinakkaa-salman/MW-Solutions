@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <style>
 
-.blog-hero {
+        .blog-hero {
             background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
             padding: 80px 20px;
             text-align: center;
@@ -211,6 +211,14 @@
             }
         }
     </style>
+    <style>
+        .navbar-top {
+            display: none !important;
+        }
+        .navbar{
+            padding-top:1rem !important;
+        }
+    </style>
 </head>
 <body>
     <main>
@@ -218,11 +226,11 @@
             <div class="navbar-top">
                 <div class="main-container">
                     <div class="navbar-top-wrapper">
-                        <!-- <img src="./icons/search-icon.svg" alt="" class="search-icon"> -->
-                        <a href="./blogs.html" class="nav-top-links">Blog</a>
-                        <a href="./contact.html" class="nav-top-links">Contact Us</a>
-                        <a href="./contact.html" class="nav-top-links">Urgent Incident Response</a>
-                        <!-- <a href="" class="nav-top-links">Login</a> -->
+                        <img src="./icons/search-icon.svg" alt="" class="search-icon">
+                        <a href="" class="nav-top-links">Blog</a>
+                        <a href="" class="nav-top-links">Contact Us</a>
+                        <a href="" class="nav-top-links">Urgent Incident Response</a>
+                        <a href="" class="nav-top-links">Login</a>
                     </div>
                 </div>
             </div>
@@ -232,6 +240,7 @@
                         <a href="./index.html">
                             <img src="./icons/logo.svg" alt="" class="navbar-logo">
                         </a>
+                        
                         <!-- Hamburger Button (will be visible on mobile/tablet only) -->
                         <button class="hamburger" aria-label="Toggle menu">
                             <span></span>
@@ -253,8 +262,8 @@
                                 <a href="#" class="nav-links act">Company <img src="./icons/down-arrow.png" alt="" class="down-arrow"></a>
                                 <div class="dropdown-menu">
                                     <a href="./about.html">About Us</a>
+                                    <a href="./leadership-team.html">Leadership Team</a>
                                     <a href="./careers.html">Careers</a>
-                                    <!-- <a href="./leadership-team.html">Leadership Team</a> -->
                                 </div>
                             </div>
                             <div class="nav-item-dropdown">
@@ -292,8 +301,8 @@
                                 <a href="#" class="nav-links act">Contact <img src="./icons/down-arrow.png" alt="" class="down-arrow"></a>
                                 <div class="dropdown-menu">
                                     <a href="./contact.html">Contact Us</a>
-                                    <a href="./careers.html">Careers</a>
                                     <a href="./faq.html">FAQ</a>
+                                    <a href="./careers.html">Careers</a>
                                 </div>
                             </div>
                             <!-- <a href="./contact.html" class="nav-links">Contact Us</a> -->
@@ -309,8 +318,8 @@
             <div class="main-container">
                 <div class="industries-section-wrapper">
                     <div class="industries-section-content-wrapper">
-                        <p class="industries-section-subtitle">Nuclear Industry</p>
-                        <h1 class="industries-section-title">Securing Safety-Critical Systems in the Nuclear Industry: The Role of OT Cybersecurity</h1>
+                        <p class="industries-section-subtitle">Nuclear Systems Security</p>
+                        <h1 class="industries-section-title">Securing Safety-Critical Systems in the Nuclear Industry And The Role Of OT Cybersecurity</h1>
                         
                     </div>
                 </div>
@@ -345,30 +354,32 @@
     <article class="blog-container">
         <!-- Introduction -->
         <div class="blog-intro">
-            Safety-critical systems within nuclear power plants are essential for ensuring safe and reliable operations. These systems not only prevent failures through design but also detect and control abnormal occurrences to maintain the plant's normal operating conditions. Over the years, the instrumentation and control (I&C) systems used in nuclear facilities have evolved significantly, transitioning from traditional hard-wired protections to modern digital systems.
+            Modern nuclear plants depend on digital instrumentation & control (I&C) and connected support systems to run safely and efficiently. That shift increases capability—but it also means cybersecurity becomes part of plant safety, not just an IT concern.
         </div>
 
         <!-- Section 1 -->
         <section class="blog-section">
-            <h2 class="blog-section-title">Evolution of I&C Systems</h2>
+            <h2 class="blog-section-title">Defense-in-Depth for Nuclear Systems</h2>
             <p class="blog-section-content">
-                Earlier generations of nuclear power plants relied on hard-wired protection systems, analogue devices, and independent trip equipment for safety functions. While effective, these systems faced challenges such as obsolescence and difficulty in replacement as technology advanced. Today, digital and programmable I&C systems offer enhanced reliability, scalability, flexibility, and easier maintenance. However, with these advancements come new challenges, particularly in cybersecurity.
+                A practical way to approach nuclear system security is defense-in-depth: layered controls designed on the assumption that any single safeguard can fail. It starts with fundamentals—knowing what exists (accurate asset inventory), controlling who can access it (strong identity and access management), and limiting where it can communicate (tight segmentation and controlled conduits).
             </p>
         </section>
 
         <!-- Section 2 -->
         <section class="blog-section">
-            <h2 class="blog-section-title">Cybersecurity Risks in Digital I&C Systems</h2>
+            <h2 class="blog-section-title">Long-Lifecycle Equipment and Compensating Controls</h2>
             <p class="blog-section-content">
-                The shift towards digital I&C systems has introduced new cybersecurity risks. Instances like the Stuxnet attack on the Iranian uranium enrichment facility highlighted the vulnerabilities of programmable controllers to cyber threats. Malware attacks can compromise safety instrumented systems (SIS), potentially leading to severe consequences such as equipment damage or operational disruptions.
+                Many safety-critical environments rely on long-lifecycle equipment built to run for decades, not to receive frequent updates. That reality doesn’t mean accepting risk—it means managing it differently. When patching is limited, protection shifts to compensating controls like hardened configurations, isolation, application allow-listing, controlled removable media, and continuous monitoring designed for OT behavior.
             </p>
         </section>
 
         <!-- Section 3 -->
         <section class="blog-section">
-            <h2 class="blog-section-title">Addressing Cybersecurity Challenges</h2>
+            <h2 class="blog-section-title">Third-Party Access and Operational Resilience</h2>
             <p class="blog-section-content">
-                To mitigate these risks, the nuclear industry must adhere to stringent cybersecurity standards and regulations. Organizations like the International Atomic Energy Agency (IAEA) and the International Electrotechnical Commission (IEC) have developed guidelines and standards specifically for protecting digital I&C systems in nuclear facilities. These frameworks emphasize risk management, security policies, and proactive measures to defend against cyber threats.
+                Vendors, integrators, and maintenance workflows often require privileged access, which makes supply chain and remote access a major pathway to manage. A mature program treats third-party access as high risk: least privilege, time-bound approvals, jump hosts, session recording, and processes that match how operations actually run.
+
+Resilience matters as much as prevention. Strong programs connect security to operations with tested incident response, offline backups for engineering assets, and rehearsed procedures to keep systems stable and safe under stress—aligned with guidance from bodies like the International Atomic Energy Agency (IAEA) and the International Electrotechnical Commission (IEC). In nuclear environments, cybersecurity is ultimately about keeping systems trustworthy, predictable, and controllable.
             </p>
         </section>
 
@@ -476,7 +487,7 @@
                             </div>
                             <div class="footer-links-wrapper">
                                 <a href="./about.html" class="footer-links">About Us</a>
-                                <!-- <a href="./leadership-team.html" class="footer-links">Leadership Team</a> -->
+                                <a href="./leadership-team.html" class="footer-links">Leadership Team</a>
                                 <a href="./careers.html" class="footer-links">Careers</a>
                                 <a href="./contact.html" class="footer-links">Contact</a>
                             </div>
