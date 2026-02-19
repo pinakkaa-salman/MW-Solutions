@@ -675,7 +675,7 @@ body {
 
 .clients-section {
   height: auto;
-  padding: 4.5rem 0 11rem 0;
+  padding: 4.5rem 0 4.5rem 0;
   background: var(--BG-Dark, #171717);
 }
 .clients-section-wrapper {
